@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ghost
+  - Player 1
+  - Player 2
+  - Player 3
+  - Player 4
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - Land
+  - Building
+  - Ship
+  - Cannonball
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 3148568985
+    locked: 0
+  - name: Island
+    uniqueID: 65851851
+    locked: 0
+  - name: Fort
+    uniqueID: 1934548773
+    locked: 0
+  - name: Decorations
+    uniqueID: 1189137827
+    locked: 0
+  - name: Ship
+    uniqueID: 102872127
+    locked: 0
+  - name: Cannonball
+    uniqueID: 4023535865
+    locked: 0
