@@ -106,18 +106,18 @@ TextureImporter:
     21300202: Island_TL
     21300204: Island_T1
     21300206: Island_TR
-    21300208: Tiles_12
-    21300210: Tiles_14
-    21300212: Tiles_15
+    21300208: fort1
+    21300210: fort4
+    21300212: fort5
     21300214: Sand_L
     21300216: Sand_R
     21300218: Island_L1
     21300220: Island_Inner
     21300222: Island_R1
-    21300224: Tiles_28
-    21300226: Tiles_29
-    21300228: Tiles_30
-    21300230: Tiles_31
+    21300224: Tiles_28fort2
+    21300226: fort3
+    21300228: fort18
+    21300230: fort19
     21300232: Sand_BL
     21300234: Sand_B
     21300236: Sand_BR
@@ -125,10 +125,10 @@ TextureImporter:
     21300240: Island_BR2
     21300242: Tiles_38
     21300244: Tiles_39
-    21300246: Tiles_44
-    21300248: Tiles_45
-    21300250: Tiles_46
-    21300252: Tiles_47
+    21300246: fort6
+    21300248: fort7
+    21300250: fort20
+    21300252: fort21
     21300254: Rock_1
     21300256: Rock_2
     21300258: Rock_3
@@ -139,10 +139,10 @@ TextureImporter:
     21300268: Island_B2
     21300270: Island_BR
     21300272: Tiles_59
-    21300274: Tiles_60
-    21300276: Tiles_61
-    21300278: Tiles_62
-    21300280: Tiles_63
+    21300274: fort8
+    21300276: fort9
+    21300278: fort14
+    21300280: fort15
     21300282: Tiles_64
     21300284: Tiles_65
     21300286: Tiles_66
@@ -150,12 +150,13 @@ TextureImporter:
     21300290: Sand_Inner2
     21300292: Water
     21300294: Tiles_75
-    21300296: Tiles_76
-    21300298: Tiles_77
-    21300300: Tiles_78
-    21300302: Tiles_79
-    21300304: Tiles_92
+    21300296: fort10
+    21300298: fort11
+    21300300: fort16
+    21300302: fort17
+    21300304: fort12
     21300306: Tiles_93
+    21300308: fort13
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -522,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_12
+      name: fort1
       rect:
         serializedVersion: 2
         x: 1536
@@ -562,7 +563,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_14
+      name: fort4
       rect:
         serializedVersion: 2
         x: 1792
@@ -582,10 +583,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_15
+      name: fort5
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1921
         y: 641
         width: 127
         height: 127
@@ -842,7 +843,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_28
+      name: Tiles_28fort2
       rect:
         serializedVersion: 2
         x: 1536
@@ -862,7 +863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_29
+      name: fort3
       rect:
         serializedVersion: 2
         x: 1664
@@ -882,7 +883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_30
+      name: fort18
       rect:
         serializedVersion: 2
         x: 1792
@@ -902,7 +903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_31
+      name: fort19
       rect:
         serializedVersion: 2
         x: 1920
@@ -1162,7 +1163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_44
+      name: fort6
       rect:
         serializedVersion: 2
         x: 1536
@@ -1182,7 +1183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_45
+      name: fort7
       rect:
         serializedVersion: 2
         x: 1664
@@ -1202,7 +1203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_46
+      name: fort20
       rect:
         serializedVersion: 2
         x: 1792
@@ -1222,7 +1223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_47
+      name: fort21
       rect:
         serializedVersion: 2
         x: 1920
@@ -1482,7 +1483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_60
+      name: fort8
       rect:
         serializedVersion: 2
         x: 1536
@@ -1502,7 +1503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_61
+      name: fort9
       rect:
         serializedVersion: 2
         x: 1664
@@ -1522,7 +1523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_62
+      name: fort14
       rect:
         serializedVersion: 2
         x: 1792
@@ -1542,7 +1543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_63
+      name: fort15
       rect:
         serializedVersion: 2
         x: 1920
@@ -1802,7 +1803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_76
+      name: fort10
       rect:
         serializedVersion: 2
         x: 1536
@@ -1822,7 +1823,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_77
+      name: fort11
       rect:
         serializedVersion: 2
         x: 1664
@@ -1842,7 +1843,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_78
+      name: fort16
       rect:
         serializedVersion: 2
         x: 1792
@@ -1862,7 +1863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_79
+      name: fort17
       rect:
         serializedVersion: 2
         x: 1920
@@ -2122,7 +2123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_92
+      name: fort12
       rect:
         serializedVersion: 2
         x: 1536
@@ -2142,7 +2143,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_93
+      name: fort13
       rect:
         serializedVersion: 2
         x: 1664

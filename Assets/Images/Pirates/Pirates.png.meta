@@ -10,7 +10,7 @@ TextureImporter:
     21300010: Ship_BlueC
     21300012: Pirates_6
     21300014: Pirates_7
-    21300016: Pirates_8
+    21300016: Banner-Yellow-Large
     21300018: Pirates_9
     21300020: Pirates_10
     21300022: Banner-Red
@@ -52,7 +52,7 @@ TextureImporter:
     21300094: Pirates_47
     21300096: Pirates_48
     21300098: Pirates_49
-    21300100: Pirates_50
+    21300100: Banner-Red-Large
     21300102: Pirates_51
     21300104: Pirates_52
     21300106: Ship_YellowA
@@ -64,13 +64,13 @@ TextureImporter:
     21300118: Ship_YellowC
     21300120: Pirates_60
     21300122: Ship_GreenB
-    21300124: Pirates_62
+    21300124: Banner-Green-Large
     21300126: Pirates_63
     21300128: Pirates_64
     21300130: Pirates_65
     21300132: Cannon
     21300134: Cannonball
-    21300136: Pirates_68
+    21300136: Banner-Blue-Large
     21300138: Pirates_69
     21300140: Explosion_Small
     21300142: Pirates_71
@@ -78,7 +78,7 @@ TextureImporter:
     21300146: Banner-YellowB
     21300148: Pirates_74
     21300150: Pirates_75
-    21300152: Pirates_76
+    21300152: Pole
     21300154: Pirates_77
     21300156: Pirates_78
     21300158: Pirates_79
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_8
+      name: Banner-Yellow-Large
       rect:
         serializedVersion: 2
         x: 476
@@ -1229,13 +1229,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_50
+      name: Banner-Red-Large
       rect:
         serializedVersion: 2
         x: 408
         y: 138
         width: 66
-        height: 95
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1469,7 +1469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_62
+      name: Banner-Green-Large
       rect:
         serializedVersion: 2
         x: 408
@@ -1589,7 +1589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_68
+      name: Banner-Blue-Large
       rect:
         serializedVersion: 2
         x: 408
@@ -1749,7 +1749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_76
+      name: Pole
       rect:
         serializedVersion: 2
         x: 88
@@ -2251,7 +2251,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18a9d050165c18f42b64becee89e437d
     vertices: []
     indices: 
     edges: []
