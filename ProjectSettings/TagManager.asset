@@ -24,7 +24,7 @@ TagManager:
   - Building
   - Ship
   - Cannonball
-  - 
+  - Explosion
   - 
   - 
   - 
@@ -63,6 +63,9 @@ TagManager:
     locked: 0
   - name: Cannonball
     uniqueID: 4023535865
+    locked: 0
+  - name: Explosion
+    uniqueID: 3007342907
     locked: 0
   - name: UI
     uniqueID: 1395459861

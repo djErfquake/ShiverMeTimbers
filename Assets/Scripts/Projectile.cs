@@ -13,7 +13,10 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ship")
+        bool isShip = LayerMask.LayerToName(collision.gameObject.layer) == "Ship";
+        bool samePlayer = collision.gameObject.tag == gameObject.tag;
+
+        if (isShip && !samePlayer)
         {
             // hit player
             Player hitPlayer = collision.collider.GetComponent<Player>();
@@ -23,12 +26,15 @@ public class Projectile : MonoBehaviour
             }
         }
 
-        // explosion
-        GameObject ex = Instantiate(explosion);
-        ex.transform.position = transform.position;
 
-        // destroy self
-        Destroy(gameObject);
+        if (!(samePlayer && isShip))
+        {
+            // explosion
+            GameObject ex = Instantiate(explosion);
+            ex.transform.position = transform.position;
 
+            // destroy self
+            Destroy(gameObject);
+        }
     }
 }

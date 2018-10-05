@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4476569587805780}
   - component: {fileID: 212698718025458784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Banner
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,9 +35,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4036565877041830}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,9 +51,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4301753751665558}
   - component: {fileID: 212569788035880628}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pole
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,9 +69,9 @@ GameObject:
   - component: {fileID: 8195094282636563816}
   - component: {fileID: 3664157346013693544}
   - component: {fileID: 2113883504337526658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort Construction 2
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,13 +87,30 @@ GameObject:
   - component: {fileID: 8195094280487936000}
   - component: {fileID: 3664157344187902678}
   - component: {fileID: 2113883506667381516}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort Construction 4
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1563403956356732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4980871044205198}
+  - component: {fileID: 114345707360540952}
+  - component: {fileID: 60875598348938596}
+  m_Layer: 12
+  m_Name: Cannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1578335626449276
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,8 +122,25 @@ GameObject:
   - component: {fileID: 8195094279944431124}
   - component: {fileID: 3664157345528332290}
   - component: {fileID: 2113883505816313904}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort Construction 1
+  m_TagString: Player 1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1939170519358754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4853290907947500}
+  - component: {fileID: 114146765642000338}
+  - component: {fileID: 60556584403867390}
+  m_Layer: 12
+  m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,9 +157,9 @@ GameObject:
   - component: {fileID: 8195094280262452292}
   - component: {fileID: 3664157343961349942}
   - component: {fileID: 2113883506973873614}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort Construction 5
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,9 +175,9 @@ GameObject:
   - component: {fileID: 8195094281930128860}
   - component: {fileID: 3664157344206846038}
   - component: {fileID: 2113883504228577700}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fort Construction 3
-  m_TagString: Untagged
+  m_TagString: Player 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,6 +197,8 @@ Transform:
   - {fileID: 4987423562230536}
   - {fileID: 4579613303937122}
   - {fileID: 4979199182105766}
+  - {fileID: 4853290907947500}
+  - {fileID: 4980871044205198}
   - {fileID: 4476569587805780}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -218,7 +254,7 @@ Transform:
   m_Children:
   - {fileID: 4301753751665558}
   m_Father: {fileID: 4036565877041830}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
 --- !u!4 &4579613303937122
 Transform:
@@ -233,6 +269,19 @@ Transform:
   m_Father: {fileID: 4036565877041830}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4853290907947500
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1939170519358754}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -63, y: 105, z: 0}
+  m_LocalScale: {x: 1.5000005, y: 1.5000005, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036565877041830}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4979199182105766
 Transform:
   m_ObjectHideFlags: 1
@@ -246,6 +295,19 @@ Transform:
   m_Father: {fileID: 4036565877041830}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4980871044205198
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563403956356732}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 63, y: 105.00001, z: 0}
+  m_LocalScale: {x: 1.5000005, y: 1.5000005, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036565877041830}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4987423562230536
 Transform:
   m_ObjectHideFlags: 1
@@ -259,6 +321,100 @@ Transform:
   m_Father: {fileID: 4036565877041830}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60556584403867390
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1939170519358754}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 307.3536, y: 287.8473}
+      - {x: 67.43824, y: 37.612213}
+      - {x: 64.12818, y: -19.331137}
+      - {x: 472.98334, y: -122.90589}
+      - {x: 501.74307, y: 16.278234}
+--- !u!60 &60875598348938596
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563403956356732}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 469.61346, y: 81.96958}
+      - {x: 67.43824, y: 37.612213}
+      - {x: 64.12818, y: -19.331137}
+      - {x: 265.46967, y: -306.7042}
+      - {x: 501.74307, y: 16.278234}
+--- !u!114 &114146765642000338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1939170519358754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680d0cba14bb83d4e9d148f7ea167ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cannonballPrefab: {fileID: 1862448455156322, guid: c3ff8f5b95495fb4d941c683ea013a6e,
+    type: 2}
+  cannonballContainer: {fileID: 0}
+  cannonOffset: 15
+  cannonballSpeed: 500
+  cooldown: 1.5
+--- !u!114 &114345707360540952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563403956356732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680d0cba14bb83d4e9d148f7ea167ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cannonballPrefab: {fileID: 1862448455156322, guid: c3ff8f5b95495fb4d941c683ea013a6e,
+    type: 2}
+  cannonballContainer: {fileID: 0}
+  cannonOffset: 15
+  cannonballSpeed: 500
+  cooldown: 1.5
 --- !u!212 &212569788035880628
 SpriteRenderer:
   m_ObjectHideFlags: 1
