@@ -4,87 +4,104 @@ using UnityEngine;
 
 public class UpgradeSystem : MonoBehaviour {
 
-    public enum Upgrade { PlusRotation }
-
-    public Ship ship;
-    public List<GameObject> fortUpgrades;
-
-    public GameObject cameraLockTransform;
-    public GameObject ui;
-    public List<GameObject> upgradeOptions;
-    private GameObject randomUpgradeOption;
-
-    //public MultipleTargetCamera cam;
+    public const string SHIP_ROTATION = "SHIP_ROTATION";
+    public const string SHIP_SPEED = "SHIP_SPEED";
+    public const string SHIP_FIRE_RATE = "SHIP_FIRE_RATE";
 
 
-    private void Start()
+    private int shipUpgradeCount = 0;
+    private List<string> shipUpgrades = new List<string>()
     {
-        HideUpgradeOptions();
-    }
+        SHIP_ROTATION, SHIP_SPEED, SHIP_FIRE_RATE
+    };
+
+
+    [Header("UI")]
+    public GameObject ui;
+    public GameObject upgradeShipButton;
+    public MultipleTargetCamera cam;
+
+    [Header("Ship")]
+    public Ship ship;
+
+    [Header("Fort")]
+    public List<GameObject> fortUpgrades;
+    public List<GameObject> cannons;
+    public GameObject banner;
+    private int fortUpgradeCount = 0;
+
+
+
 
     public void ShowUpgradeOptions()
     {
-        int randomUpgradeIndex = Random.Range(0, upgradeOptions.Count);
-        for (int i = 0; i < upgradeOptions.Count; i++)
-        {
-            if (i == randomUpgradeIndex)
-            {
-                randomUpgradeOption = upgradeOptions[i];
-                randomUpgradeOption.SetActive(true);
-            }
-            else
-            {
-                upgradeOptions[i].SetActive(false);
-            }
-        }
-        upgradeOptions.RemoveAt(randomUpgradeIndex);
-
-        cameraLockTransform.SetActive(true);
         ui.SetActive(true);
-
-        //cam.targets.Add(cameraLockTransform.transform);
+        cam.targets.Add(ui.transform);
     }
 
 
     public void HideUpgradeOptions()
     {
-        if (randomUpgradeOption != null)
-        {
-            Destroy(randomUpgradeOption);
-            randomUpgradeOption = null;
-        }
 
-        //cam.targets.Remove(cameraLockTransform.transform);
-        cameraLockTransform.SetActive(false);
+        cam.targets.Remove(ui.transform);
         ui.SetActive(false);
     }
 
 
-    public void UpgradeRotationSpeed()
+    public void UpgradeShip()
     {
-        ship.rotationSpeed += 10f;
         HideUpgradeOptions();
+
+        switch (shipUpgrades[shipUpgradeCount])
+        {
+            case SHIP_ROTATION:
+                ship.rotationSpeed += 0.1f;
+                break;
+            case SHIP_SPEED:
+                ship.maxSpeed += 1f;
+                break;
+            case SHIP_FIRE_RATE:
+                for (int i = 0; i < ship.cannons.Count; i++) { ship.cannons[i].cooldown -= 0.3f; }
+                break;
+        }
+
+        shipUpgradeCount++;
+        if (shipUpgradeCount >= shipUpgrades.Count)
+        {
+            upgradeShipButton.SetActive(false);
+        }
     }
 
 
-    public void FortUpgrade()
+    public void UpgradeFort()
     {
         HideUpgradeOptions();
 
-        bool upgraded = false;
-        for (int i = 0; i < fortUpgrades.Count; i++)
-        {
-            if (!fortUpgrades[i].activeSelf)
-            {
-                fortUpgrades[i].SetActive(true);
-                upgraded = true;
-                break;
-            }
-        }
+        fortUpgradeCount++;
+        for (int i = 0; i < fortUpgrades.Count; i++) { fortUpgrades[i].SetActive(false); }
 
-        if (!upgraded)
+        fortUpgrades[fortUpgradeCount - 1].SetActive(true);
+        if (fortUpgradeCount >= 1) { for (int i = 0; i < cannons.Count; i++) { cannons[i].SetActive(true); } }
+        banner.SetActive(true);
+
+        if (fortUpgradeCount >= fortUpgrades.Count)
         {
             Debug.Log("You win!");
         }
+    }
+
+
+    public void Reset()
+    {
+        HideUpgradeOptions();
+
+        fortUpgradeCount = 0;
+        for (int i = 0; i < fortUpgrades.Count; i++) { fortUpgrades[i].SetActive(false); }
+        for (int i = 0; i < cannons.Count; i++) { cannons[i].SetActive(false); }
+        banner.SetActive(false);
+
+        shipUpgradeCount = 0;
+        ship.Reset();
+        upgradeShipButton.SetActive(true);
     }
 }

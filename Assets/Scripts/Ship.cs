@@ -25,6 +25,12 @@ public class Ship : MonoBehaviour
     private Rigidbody2D rb;
 
 
+    // starting values
+    private float startingRotationSpeed = 20f;
+    private float startingMaxSpeed = 0.15f;
+    private float startingCannonCooldown = 1f;
+
+
 
     public void Setup(Player p)
     {
@@ -34,8 +40,19 @@ public class Ship : MonoBehaviour
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = player.sprites[0];
+
+        startingRotationSpeed = rotationSpeed;
+        startingMaxSpeed = maxSpeed;
+        startingCannonCooldown = cannons[0].cooldown;
     }
 
+
+    public void Reset()
+    {
+        rotationSpeed = startingRotationSpeed;
+        maxSpeed = startingMaxSpeed;
+        for (int i = 0; i < cannons.Count; i++) { cannons[i].cooldown = startingCannonCooldown; }
+    }
 
 
 

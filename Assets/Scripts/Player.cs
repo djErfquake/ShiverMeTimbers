@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
 
     [Header("Upgrades")]
-    private UpgradeSystem upgradeSystem;
+    public UpgradeSystem upgradeSystem;
 
 
 
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         ship.Setup(this);
+        upgradeSystem.Reset();
     }
 
 
