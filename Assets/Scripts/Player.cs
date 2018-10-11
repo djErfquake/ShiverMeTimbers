@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [Header("Health")]
     public List<Sprite> sprites = new List<Sprite>();
     private int health = 0;
+    [HideInInspector]
+    public bool invincible = false;
 
 
     [Header("Upgrades")]
@@ -31,22 +33,35 @@ public class Player : MonoBehaviour
 
     public void GetUpgrade()
     {
+        Invincible(true);
         upgradeSystem.ShowUpgradeOptions();
         Debug.Log(gameObject.name + " getting upgrade");
     }
 
 
+    public void Invincible(bool active)
+    {
+        invincible = active;
+        ship.Flash(active);
+    }
+
+
     public void TakeDamageFrom(Player offendingPlayer)
     {
-        health++;
-        if (health < 3)
+        if (!invincible)
         {
-            ship.SetSprite(sprites[health]);
-        }
-        else if (health == 3)
-        {
-            Debug.Log(gameObject.name + " is dead!");
-            offendingPlayer.GetUpgrade();
+            health++;
+            if (health < sprites.Count)
+            {
+                ship.SetSprite(sprites[health]);
+            }
+
+            if (health == sprites.Count - 1)
+            {
+                invincible = true;
+                Debug.Log(gameObject.name + " is dead!");
+                offendingPlayer.GetUpgrade();
+            }
         }
     }
 }

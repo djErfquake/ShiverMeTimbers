@@ -5,7 +5,7 @@ TextureImporter:
     21300000: Explosion_Large
     21300002: Pirates_1
     21300004: Pirates_2
-    21300006: Pirates_3
+    21300006: Ship_YellowDead
     21300008: Ghost Ship
     21300010: Ship_BlueC
     21300012: Pirates_6
@@ -25,8 +25,8 @@ TextureImporter:
     21300040: Pirates_20
     21300042: Pirates_21
     21300044: Ship_RedB
-    21300046: Ship_Blue
-    21300048: Pirates_24
+    21300046: Ship_BlueA
+    21300048: Ship_BlueDead
     21300050: Ship_RedA
     21300052: Ship_GreenC
     21300054: Ship_YellowB
@@ -43,7 +43,7 @@ TextureImporter:
     21300076: Pirates_38
     21300078: Pirates_39
     21300080: Ship_GreenA
-    21300082: Pirates_41
+    21300082: Ship_GreenDead
     21300084: Pirates_42
     21300086: Ship_RedC
     21300088: Ship_BlueB
@@ -60,7 +60,7 @@ TextureImporter:
     21300110: Pirates_55
     21300112: Pirates_56
     21300114: Pirates_57
-    21300116: Pirates_58
+    21300116: Ship_RedDead
     21300118: Ship_YellowC
     21300120: Pirates_60
     21300122: Ship_GreenB
@@ -289,7 +289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_3
+      name: Ship_YellowDead
       rect:
         serializedVersion: 2
         x: 136
@@ -689,7 +689,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ship_Blue
+      name: Ship_BlueA
       rect:
         serializedVersion: 2
         x: 68
@@ -709,7 +709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_24
+      name: Ship_BlueDead
       rect:
         serializedVersion: 2
         x: 136
@@ -1049,7 +1049,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_41
+      name: Ship_GreenDead
       rect:
         serializedVersion: 2
         x: 136
@@ -1389,7 +1389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_58
+      name: Ship_RedDead
       rect:
         serializedVersion: 2
         x: 136

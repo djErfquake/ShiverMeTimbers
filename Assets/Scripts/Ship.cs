@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Ship : MonoBehaviour
 {
@@ -58,30 +60,33 @@ public class Ship : MonoBehaviour
 
     private void Update()
     {
-        // rotate
-        transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
-
-        // move forward
-        if (Input.GetKey(KeyCode.Space) || Input.GetButton("Go " + player.playerNumber))
+        if (!player.invincible)
         {
-            speed = Mathf.Lerp(speed, maxSpeed, moveSpeed);
-            rb.angularVelocity = 0;
-        }
-        else
-        {
-            speed = Mathf.Lerp(speed, 0f, slowSpeed);
-            if (speed < 0.005) { speed = 0; }
-        }
+            // rotate
+            transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
 
-        transform.localPosition += transform.up * -speed;
-
-
-        // fire cannons
-        if (Input.GetKeyDown(KeyCode.Z) || Input.GetButton("Fire " + player.playerNumber))
-        {
-            for (int i = 0; i < cannons.Count; i++)
+            // move forward
+            if (Input.GetKey(KeyCode.Space) || Input.GetButton("Go " + player.playerNumber))
             {
-                cannons[i].Fire();
+                speed = Mathf.Lerp(speed, maxSpeed, moveSpeed);
+                rb.angularVelocity = 0;
+            }
+            else
+            {
+                speed = Mathf.Lerp(speed, 0f, slowSpeed);
+                if (speed < 0.005) { speed = 0; }
+            }
+
+            transform.localPosition += transform.up * -speed;
+
+
+            // fire cannons
+            if (Input.GetKeyDown(KeyCode.Z) || Input.GetButton("Fire " + player.playerNumber))
+            {
+                for (int i = 0; i < cannons.Count; i++)
+                {
+                    cannons[i].Fire();
+                }
             }
         }
     }
@@ -98,6 +103,19 @@ public class Ship : MonoBehaviour
 
 
 
+
+    
+    public void Flash(bool active)
+    {
+        if (active)
+        {
+            
+        }
+        else
+        {
+            
+        }
+    }
     
 
 }

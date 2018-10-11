@@ -21,8 +21,8 @@ public class UpgradeSystem : MonoBehaviour {
     public GameObject upgradeShipButton;
     public MultipleTargetCamera cam;
 
-    [Header("Ship")]
-    public Ship ship;
+    [Header("Player")]
+    public Player player;
 
     [Header("Fort")]
     public List<GameObject> fortUpgrades;
@@ -55,13 +55,13 @@ public class UpgradeSystem : MonoBehaviour {
         switch (shipUpgrades[shipUpgradeCount])
         {
             case SHIP_ROTATION:
-                ship.rotationSpeed += 0.1f;
+                player.ship.rotationSpeed += 0.1f;
                 break;
             case SHIP_SPEED:
-                ship.maxSpeed += 1f;
+                player.ship.maxSpeed += 1f;
                 break;
             case SHIP_FIRE_RATE:
-                for (int i = 0; i < ship.cannons.Count; i++) { ship.cannons[i].cooldown -= 0.3f; }
+                for (int i = 0; i < player.ship.cannons.Count; i++) { player.ship.cannons[i].cooldown -= 0.3f; }
                 break;
         }
 
@@ -70,6 +70,8 @@ public class UpgradeSystem : MonoBehaviour {
         {
             upgradeShipButton.SetActive(false);
         }
+
+        player.Invincible(false);
     }
 
 
@@ -88,6 +90,8 @@ public class UpgradeSystem : MonoBehaviour {
         {
             Debug.Log("You win!");
         }
+
+        player.Invincible(false);
     }
 
 
@@ -101,7 +105,8 @@ public class UpgradeSystem : MonoBehaviour {
         banner.SetActive(false);
 
         shipUpgradeCount = 0;
-        ship.Reset();
         upgradeShipButton.SetActive(true);
+
+        player.ship.Reset();
     }
 }
