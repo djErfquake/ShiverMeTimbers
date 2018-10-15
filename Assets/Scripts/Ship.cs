@@ -22,6 +22,10 @@ public class Ship : MonoBehaviour
     public List<Cannon> cannons;
 
 
+    [Header("Banners")]
+    public SpriteRenderer banners;
+
+
     // components
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -41,7 +45,7 @@ public class Ship : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = player.sprites[0];
+        spriteRenderer.sprite = player.mainShipSprites[0];
 
         startingRotationSpeed = rotationSpeed;
         startingMaxSpeed = maxSpeed;
@@ -96,9 +100,10 @@ public class Ship : MonoBehaviour
 
 
 
-    public void SetSprite(Sprite newSprite)
+    public void SetSprite(Sprite newShipSprite, Sprite newBannerSprite)
     {
-        spriteRenderer.sprite = newSprite;
+        spriteRenderer.sprite = newShipSprite;
+        banners.sprite = newBannerSprite;
     }
 
 

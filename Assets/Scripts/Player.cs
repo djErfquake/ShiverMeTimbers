@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
     public Ship ship;
 
     [Header("Health")]
-    public List<Sprite> sprites = new List<Sprite>();
+    public List<Sprite> mainShipSprites = new List<Sprite>();
+    public List<Sprite> bannerSprites = new List<Sprite>();
     private int health = 0;
     [HideInInspector]
     public bool invincible = false;
@@ -51,12 +52,12 @@ public class Player : MonoBehaviour
         if (!invincible)
         {
             health++;
-            if (health < sprites.Count)
+            if (health < mainShipSprites.Count)
             {
-                ship.SetSprite(sprites[health]);
+                ship.SetSprite(mainShipSprites[health], bannerSprites[health]);
             }
 
-            if (health == sprites.Count - 1)
+            if (health == mainShipSprites.Count - 1)
             {
                 invincible = true;
                 Debug.Log(gameObject.name + " is dead!");

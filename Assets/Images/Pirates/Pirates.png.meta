@@ -10,8 +10,8 @@ TextureImporter:
     21300010: Ship_BlueC
     21300012: Pirates_6
     21300014: Pirates_7
-    21300016: Banner-Yellow-Large
-    21300018: Pirates_9
+    21300016: Banner-Yellow-LargeA
+    21300018: Banner-Green-LargeB
     21300020: Pirates_10
     21300022: Banner-Red
     21300024: Banner-Green
@@ -31,12 +31,12 @@ TextureImporter:
     21300052: Ship_GreenC
     21300054: Ship_YellowB
     21300056: Pirates_28
-    21300058: Pirates_29
+    21300058: Banner-Green-LargeDead
     21300060: Pirates_30
     21300062: Pirates_31
     21300064: Banner-RedB
     21300066: Pirates_33
-    21300068: Pirates_34
+    21300068: Banner-Blue-LargeDead
     21300070: Explosion_Medium
     21300072: Pirates_36
     21300074: Pirates_37
@@ -47,16 +47,16 @@ TextureImporter:
     21300084: Pirates_42
     21300086: Ship_RedC
     21300088: Ship_BlueB
-    21300090: Pirates_45
-    21300092: Pirates_46
+    21300090: Banner-Green-LargeC
+    21300092: Banner-Yellow-LargeB
     21300094: Pirates_47
     21300096: Pirates_48
     21300098: Pirates_49
-    21300100: Banner-Red-Large
-    21300102: Pirates_51
+    21300100: Banner-Red-LargeA
+    21300102: Banner-Red-LargeC
     21300104: Pirates_52
     21300106: Ship_YellowA
-    21300108: Pirates_54
+    21300108: Banner-Yellow-LargeDead
     21300110: Pirates_55
     21300112: Pirates_56
     21300114: Pirates_57
@@ -64,13 +64,13 @@ TextureImporter:
     21300118: Ship_YellowC
     21300120: Pirates_60
     21300122: Ship_GreenB
-    21300124: Banner-Green-Large
-    21300126: Pirates_63
+    21300124: Banner-Green-LargeA
+    21300126: Banner-Blue-LargeC
     21300128: Pirates_64
     21300130: Pirates_65
     21300132: Cannon
     21300134: Cannonball
-    21300136: Banner-Blue-Large
+    21300136: Banner-Blue-LargeA
     21300138: Pirates_69
     21300140: Explosion_Small
     21300142: Pirates_71
@@ -80,12 +80,12 @@ TextureImporter:
     21300150: Pirates_75
     21300152: Pole
     21300154: Pirates_77
-    21300156: Pirates_78
+    21300156: Banner-Red-LargeB
     21300158: Pirates_79
     21300160: Pirates_80
     21300162: Pirates_81
-    21300164: Pirates_82
-    21300166: Pirates_83
+    21300164: Banner-Blue-LargeB
+    21300166: Banner-Red-LargeDead
     21300168: Pirates_84
     21300170: Pirates_85
     21300172: Pirates_86
@@ -103,6 +103,7 @@ TextureImporter:
     21300196: Pirates_98
     21300198: Banner-BlueB
     21300200: Pirates_100
+    21300202: Banner-Yellow-LargeC
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -389,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-Yellow-Large
+      name: Banner-Yellow-LargeA
       rect:
         serializedVersion: 2
         x: 476
@@ -409,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_9
+      name: Banner-Green-LargeB
       rect:
         serializedVersion: 2
         x: 544
@@ -809,7 +810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_29
+      name: Banner-Green-LargeDead
       rect:
         serializedVersion: 2
         x: 476
@@ -909,7 +910,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_34
+      name: Banner-Blue-LargeDead
       rect:
         serializedVersion: 2
         x: 476
@@ -1129,7 +1130,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_45
+      name: Banner-Green-LargeC
       rect:
         serializedVersion: 2
         x: 408
@@ -1149,7 +1150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_46
+      name: Banner-Yellow-LargeB
       rect:
         serializedVersion: 2
         x: 476
@@ -1229,7 +1230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-Red-Large
+      name: Banner-Red-LargeA
       rect:
         serializedVersion: 2
         x: 408
@@ -1249,11 +1250,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_51
+      name: Banner-Red-LargeC
       rect:
         serializedVersion: 2
-        x: 476
-        y: 221
+        x: 477
+        y: 222
         width: 66
         height: 47
       alignment: 0
@@ -1309,7 +1310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_54
+      name: Banner-Yellow-LargeDead
       rect:
         serializedVersion: 2
         x: 476
@@ -1469,7 +1470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-Green-Large
+      name: Banner-Green-LargeA
       rect:
         serializedVersion: 2
         x: 408
@@ -1489,7 +1490,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_63
+      name: Banner-Blue-LargeC
       rect:
         serializedVersion: 2
         x: 476
@@ -1589,7 +1590,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-Blue-Large
+      name: Banner-Blue-LargeA
       rect:
         serializedVersion: 2
         x: 408
@@ -1789,7 +1790,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_78
+      name: Banner-Red-LargeB
       rect:
         serializedVersion: 2
         x: 476
@@ -1869,7 +1870,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_82
+      name: Banner-Blue-LargeB
       rect:
         serializedVersion: 2
         x: 0
@@ -1889,7 +1890,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_83
+      name: Banner-Red-LargeDead
       rect:
         serializedVersion: 2
         x: 68
@@ -2244,6 +2245,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bd630ab48a8a9a84e9ec10750c55a151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banner-Yellow-LargeC
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 186
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cd49b4604d7e2488f2bb2cb368dabe
       vertices: []
       indices: 
       edges: []

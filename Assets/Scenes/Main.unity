@@ -16943,6 +16943,7 @@ MonoBehaviour:
   cannons:
   - {fileID: 1488541756}
   - {fileID: 897044412}
+  banners: {fileID: 1641153760}
 --- !u!114 &1657812353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16956,11 +16957,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: Any
   ship: {fileID: 1657812352}
-  sprites:
+  mainShipSprites:
   - {fileID: 21300050, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
   - {fileID: 21300044, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
   - {fileID: 21300086, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
   - {fileID: 21300116, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
+  bannerSprites:
+  - {fileID: 21300100, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
+  - {fileID: 21300156, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
+  - {fileID: 21300102, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
+  - {fileID: 21300166, guid: 932a25e8b79f10f4795b67cdf0ceba20, type: 3}
   invincible: 0
   upgradeSystem: {fileID: 1636194445}
 --- !u!212 &1657812354
