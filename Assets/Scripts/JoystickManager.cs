@@ -5,7 +5,19 @@ using UnityEngine.Events;
 
 public class JoystickManager : MonoBehaviour
 {
-    
+
+    #region singleton
+    // singleton
+    public static JoystickManager instance;
+    private void Awake()
+    {
+        if (instance && instance != this) { Destroy(gameObject); return; }
+        instance = this;
+    }
+    #endregion
+
+
+
     public JoystickEvent joystickEvent;
     private List<bool> joysticksConnected = new List<bool>();
 
@@ -45,5 +57,5 @@ public class JoystickManager : MonoBehaviour
 [System.Serializable]
 public class JoystickEvent : UnityEvent<JoystickEvent.JoystickStatus, int>
 {
-    public enum JoystickStatus { JoystickAdded, JoystickRemoved }
+    public enum JoystickStatus { JoystickAdded, JoystickRemoved };
 }

@@ -38,6 +38,7 @@ public class UpgradeSystem : MonoBehaviour {
     {
         ui.SetActive(true);
         cam.targets.Add(ui.transform);
+        upgradeShipButton.GetComponent<Button>().Select();
     }
 
 
