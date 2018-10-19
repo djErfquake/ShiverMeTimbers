@@ -25,7 +25,7 @@ TextureImporter:
     21300040: Sand_TL2
     21300042: 0220
     21300044: 2222a
-    21300046: Tiles_23
+    21300046: Island_Inner2
     21300048: 2002
     21300050: Tiles_25
     21300052: Tiles_26
@@ -71,9 +71,9 @@ TextureImporter:
     21300132: Rock F
     21300134: 1111a
     21300136: 1111b
-    21300138: Tiles_69
-    21300140: Tiles_70
-    21300142: Tiles_71
+    21300138: Plant 1
+    21300140: Plant 2
+    21300142: Plant 3
     21300144: Water
     21300146: Tiles_73
     21300148: Tiles_74
@@ -88,8 +88,8 @@ TextureImporter:
     21300166: Tiles_83
     21300168: Tiles_84
     21300170: Tiles_85
-    21300172: Tiles_86
-    21300174: Tiles_87
+    21300172: Plant 4
+    21300174: Plant 5
     21300176: Tiles_88
     21300178: Tiles_89
     21300180: Tiles_90
@@ -123,8 +123,8 @@ TextureImporter:
     21300236: Sand_BR
     21300238: Island_BL2
     21300240: Island_BR2
-    21300242: Tiles_38
-    21300244: Tiles_39
+    21300242: Island_Inner3
+    21300244: Island_Inner4
     21300246: fort6
     21300248: fort7
     21300250: fort20
@@ -143,9 +143,9 @@ TextureImporter:
     21300276: fort9
     21300278: fort14
     21300280: fort15
-    21300282: Tiles_64
-    21300284: Tiles_65
-    21300286: Tiles_66
+    21300282: Rock_4
+    21300284: Rock_5
+    21300286: Rock_6
     21300288: Tiles_67
     21300290: Sand_Inner2
     21300292: Water
@@ -743,7 +743,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_23
+      name: Island_Inner2
       rect:
         serializedVersion: 2
         x: 896
@@ -1043,7 +1043,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_38
+      name: Island_Inner3
       rect:
         serializedVersion: 2
         x: 770
@@ -1063,7 +1063,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_39
+      name: Island_Inner4
       rect:
         serializedVersion: 2
         x: 896
@@ -1563,7 +1563,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_64
+      name: Rock_4
       rect:
         serializedVersion: 2
         x: 0
@@ -1583,7 +1583,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_65
+      name: Rock_5
       rect:
         serializedVersion: 2
         x: 128
@@ -1603,7 +1603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_66
+      name: Rock_6
       rect:
         serializedVersion: 2
         x: 256
@@ -1663,7 +1663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_69
+      name: Plant 1
       rect:
         serializedVersion: 2
         x: 640
@@ -1683,7 +1683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_70
+      name: Plant 2
       rect:
         serializedVersion: 2
         x: 768
@@ -1703,7 +1703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_71
+      name: Plant 3
       rect:
         serializedVersion: 2
         x: 896
@@ -2003,7 +2003,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_86
+      name: Plant 4
       rect:
         serializedVersion: 2
         x: 768
@@ -2023,7 +2023,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_87
+      name: Plant 5
       rect:
         serializedVersion: 2
         x: 896

@@ -25,7 +25,7 @@ TagManager:
   - Ship
   - Cannonball
   - Explosion
-  - 
+  - Decorations
   - 
   - 
   - 
@@ -52,11 +52,11 @@ TagManager:
   - name: Island
     uniqueID: 65851851
     locked: 0
-  - name: Fort
-    uniqueID: 1934548773
-    locked: 0
   - name: Decorations
     uniqueID: 1189137827
+    locked: 0
+  - name: Fort
+    uniqueID: 1934548773
     locked: 0
   - name: Ship
     uniqueID: 102872127

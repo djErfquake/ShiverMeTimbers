@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         ship.Setup(this);
-        upgradeSystem.Reset();
+        upgradeSystem.Hide();
     }
 
 

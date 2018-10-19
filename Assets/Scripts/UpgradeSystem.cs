@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeSystem : MonoBehaviour {
 
@@ -42,7 +43,6 @@ public class UpgradeSystem : MonoBehaviour {
 
     public void HideUpgradeOptions()
     {
-
         cam.targets.Remove(ui.transform);
         ui.SetActive(false);
     }
@@ -97,16 +97,22 @@ public class UpgradeSystem : MonoBehaviour {
 
     public void Reset()
     {
+        Hide();
+
+        shipUpgradeCount = 0;
+        upgradeShipButton.SetActive(true);
+        upgradeShipButton.GetComponent<Button>().Select();
+
+        player.ship.Reset();
+    }
+
+    public void Hide()
+    {
         HideUpgradeOptions();
 
         fortUpgradeCount = 0;
         for (int i = 0; i < fortUpgrades.Count; i++) { fortUpgrades[i].SetActive(false); }
         for (int i = 0; i < cannons.Count; i++) { cannons[i].SetActive(false); }
         banner.SetActive(false);
-
-        shipUpgradeCount = 0;
-        upgradeShipButton.SetActive(true);
-
-        player.ship.Reset();
     }
 }

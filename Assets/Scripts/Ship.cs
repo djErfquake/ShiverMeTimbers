@@ -50,6 +50,8 @@ public class Ship : MonoBehaviour
         startingRotationSpeed = rotationSpeed;
         startingMaxSpeed = maxSpeed;
         startingCannonCooldown = cannons[0].cooldown;
+
+        Debug.Log("startingRotationSpeed: " + startingRotationSpeed);
     }
 
 
@@ -70,7 +72,7 @@ public class Ship : MonoBehaviour
             transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
 
             // move forward
-            if (Input.GetKey(KeyCode.Space) || Input.GetButton("Go " + player.playerNumber))
+            if (Input.GetButton("Go " + player.playerNumber))
             {
                 speed = Mathf.Lerp(speed, maxSpeed, moveSpeed);
                 rb.angularVelocity = 0;
@@ -85,7 +87,7 @@ public class Ship : MonoBehaviour
 
 
             // fire cannons
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetButton("Fire " + player.playerNumber))
+            if (Input.GetButton("Fire " + player.playerNumber))
             {
                 for (int i = 0; i < cannons.Count; i++)
                 {
