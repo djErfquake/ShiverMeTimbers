@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class PlayerJoinScreen : MonoBehaviour
 {
+
+    #region singleton
+    // singleton
+    public static PlayerJoinScreen instance;
+    private void Awake()
+    {
+        if (instance && instance != this) { Destroy(gameObject); return; }
+        instance = this;
+    }
+    #endregion
+
+
     public PlayerJoinSection[] playerJoinSections;
 
 
 
-    public void AddPlayer()
+    public void AddPlayer(Player p)
     {
         int numOfPlayers = GetTotalPlayers();
         PlayerJoinSection newPlayerSection = playerJoinSections[0];
@@ -31,7 +43,7 @@ public class PlayerJoinScreen : MonoBehaviour
 
             if (playerJoinSections[i] == newPlayerSection)
             {
-                newPlayerSection.AddPlayer(newX, newWidth);
+                newPlayerSection.AddPlayer(p, newX, newWidth);
                 addedPlayers++;
             }
             else if (playerJoinSections[i].playerActive)
@@ -81,21 +93,6 @@ public class PlayerJoinScreen : MonoBehaviour
             }
         }
         return numPlayers;
-    }
-
-
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            AddPlayer();
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            RemovePlayer(0);
-        }
     }
 
 

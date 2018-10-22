@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     public UpgradeSystem upgradeSystem;
 
 
+    [HideInInspector]
+    public bool joystickActive = false;
+
+
 
 
     private void Start()

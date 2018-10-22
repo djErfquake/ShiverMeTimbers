@@ -13,8 +13,10 @@ public class PlayerJoinSection : MonoBehaviour
 
 
 
-    public void AddPlayer(float x, float width)
+    public void AddPlayer(Player p, float x, float width)
     {
+        ship.GetComponent<ShipRotate>().Setup(p);
+
         gameObject.SetActive(true);
 
         playerActive = true;
@@ -39,6 +41,8 @@ public class PlayerJoinSection : MonoBehaviour
 
     public void Reset()
     {
+        ship.GetComponent<ShipRotate>().Reset();
+
         playerActive = false;
         ship.DOAnchorPosY(-1080f, 1f).OnComplete(() =>
         {
