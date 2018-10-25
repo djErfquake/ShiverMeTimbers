@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
                 case GameState.MainMenu:
                     break;
                 case GameState.PlayersReady:
-                    playersScreen.AddPlayer(players[index]);
                     break;
                 case GameState.Game:
                     break;
@@ -93,8 +92,10 @@ public class GameManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
 
-        gameState = GameState.PlayersReady;
-        Camera.main.transform.DOMove(playerMenuCameraPosition, 0.8f).SetEase(Ease.InCubic);
+        Camera.main.transform.DOMove(playerMenuCameraPosition, 0.8f).SetEase(Ease.InCubic).OnComplete(() =>
+        {
+            gameState = GameState.PlayersReady;
+        });
     }
 
 
@@ -115,15 +116,26 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetButtonDown("Go " + i.ToString()))
             {
+                Debug.Log("Go " + i.ToString() + " Down");
+
                 if (gameState == GameState.PlayersReady)
                 {
-                    playersScreen.AddPlayer(players[i-1]);
+                    if (playersScreen.PlayerAdded(i-1))
+                    {
+                        // start game!
+                    }
+                    else
+                    {
+                        Debug.Log("Adding Player " + i.ToString());
+                        playersScreen.AddPlayer(players[i - 1], i - 1);
+                    }
                 }
             }
             else if (Input.GetButtonDown("Back " + i.ToString()))
             {
                 if (gameState == GameState.PlayersReady)
                 {
+                    Debug.Log("Removing Player " + i.ToString());
                     playersScreen.RemovePlayer(i-1);
                 }
             }

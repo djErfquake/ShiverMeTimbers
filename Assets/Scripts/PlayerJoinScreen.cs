@@ -20,20 +20,9 @@ public class PlayerJoinScreen : MonoBehaviour
 
 
 
-    public void AddPlayer(Player p)
+    public void AddPlayer(Player p, int index)
     {
-        int numOfPlayers = GetTotalPlayers();
-        PlayerJoinSection newPlayerSection = playerJoinSections[0];
-        for (int i = 0; i < playerJoinSections.Length; i++)
-        {
-            if (!playerJoinSections[i].playerActive)
-            {
-                newPlayerSection = playerJoinSections[i];
-                break;
-            }
-        }
-        numOfPlayers++;
-
+        int numOfPlayers = GetTotalPlayers() + 1;
 
         int addedPlayers = 0;
         for (int i = 0; i < playerJoinSections.Length; i++)
@@ -41,9 +30,9 @@ public class PlayerJoinScreen : MonoBehaviour
             float newWidth = Screen.width / numOfPlayers;
             float newX = newWidth * addedPlayers;
 
-            if (playerJoinSections[i] == newPlayerSection)
+            if (i == index)
             {
-                newPlayerSection.AddPlayer(p, newX, newWidth);
+                playerJoinSections[i].AddPlayer(p, newX, newWidth);
                 addedPlayers++;
             }
             else if (playerJoinSections[i].playerActive)
@@ -51,31 +40,29 @@ public class PlayerJoinScreen : MonoBehaviour
                 playerJoinSections[i].SetNewSize(newX, newWidth);
                 addedPlayers++;
             }
-
         }
-
-        
     }
 
 
     public void RemovePlayer(int playerIndex)
     {
-        playerJoinSections[playerIndex].Reset();
+        playerJoinSections[playerIndex].RemovePlayer();
 
         int numOfPlayers = GetTotalPlayers();
-
-        int addedPlayers = 0;
-        for (int i = 0; i < playerJoinSections.Length; i++)
+        if (numOfPlayers > 0)
         {
-            float newWidth = Screen.width / numOfPlayers;
-            float newX = newWidth * addedPlayers;
-
-            if (playerJoinSections[i].playerActive)
+            int addedPlayers = 0;
+            for (int i = 0; i < playerJoinSections.Length; i++)
             {
-                playerJoinSections[i].SetNewSize(newX, newWidth);
-                addedPlayers++;
-            }
+                float newWidth = Screen.width / numOfPlayers;
+                float newX = newWidth * addedPlayers;
 
+                if (playerJoinSections[i].playerActive)
+                {
+                    playerJoinSections[i].SetNewSize(newX, newWidth, 1f);
+                    addedPlayers++;
+                }
+            }
         }
     }
 
@@ -94,6 +81,14 @@ public class PlayerJoinScreen : MonoBehaviour
         }
         return numPlayers;
     }
+
+
+    public bool PlayerAdded(int index)
+    {
+        return playerJoinSections[index].playerActive;
+    }
+
+
 
 
     private void Start()

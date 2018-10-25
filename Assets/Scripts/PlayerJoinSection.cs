@@ -32,14 +32,14 @@ public class PlayerJoinSection : MonoBehaviour
     }
 
 
-    public void SetNewSize(float x, float width)
+    public void SetNewSize(float x, float width, float delay = 0)
     {
-        colorSection.DOAnchorPosX(x, 0.3f);
-        colorSection.DOSizeDelta(new Vector2(width, 1082f), 0.3f);
+        colorSection.DOAnchorPosX(x, 0.3f).SetDelay(delay);
+        colorSection.DOSizeDelta(new Vector2(width, 1082f), 0.3f).SetDelay(delay);
     }
 
 
-    public void Reset()
+    public void RemovePlayer()
     {
         ship.GetComponent<ShipRotate>().Reset();
 
@@ -51,5 +51,16 @@ public class PlayerJoinSection : MonoBehaviour
                 gameObject.SetActive(false);
             });
         });
+    }
+
+
+    public void Reset()
+    {
+        gameObject.SetActive(false);
+
+        playerActive = false;
+
+        colorSection.anchoredPosition = new Vector2(0, 1082f);
+        ship.anchoredPosition = new Vector2(0, 1080f);
     }
 }
