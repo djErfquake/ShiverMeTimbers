@@ -1,9 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
 public class MultipleTargetCamera : MonoBehaviour
 {
+
+    #region singleton
+    // singleton
+    public static MultipleTargetCamera instance;
+    private void Awake()
+    {
+        if (instance && instance != this) { Destroy(gameObject); return; }
+        instance = this;
+    }
+    #endregion
+
+
     public List<Transform> targets;
     public Vector3 offset;
     public float smoothTime = 0.5f;
@@ -57,4 +70,32 @@ public class MultipleTargetCamera : MonoBehaviour
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, newZoom, Time.deltaTime);
     }
 
+
+
+    public void MoveTo(Vector2 newPosition, System.Action onComplete = null)
+    {
+        Vector3 camPosition = newPosition;
+        camPosition.z = -10f;
+
+        transform.DOMove(camPosition, 0.8f).SetEase(Ease.InCubic).OnComplete(() =>
+        {
+            if (onComplete != null) { onComplete(); }
+        });
+    }
+
+
+    public void AddTarget(Transform newTarget)
+    {
+        targets.Add(newTarget);
+    }
+
+    public void RemoveTarget(Transform removeTarget)
+    {
+        targets.Remove(removeTarget);
+    }
+
+    public void ClearTargets()
+    {
+        targets.Clear();
+    }
 }

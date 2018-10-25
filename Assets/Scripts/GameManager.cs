@@ -10,13 +10,16 @@ public class GameManager : MonoBehaviour
     public enum GameState { MainMenu, PlayersReady, Game, End };
     private GameState gameState = GameState.Game;
 
+    private MultipleTargetCamera cam;
     private JoystickManager joystickManager;
     private PlayerJoinScreen playersScreen;
 
 
+    
+
     [Header("Menus")]
-    public Vector3 mainMenuCameraPosition;
-    public Vector3 playerMenuCameraPosition;
+    public Vector2 mainMenuCameraPosition;
+    public Vector2 playerMenuCameraPosition;
     public Button playButton;
 
 
@@ -32,13 +35,15 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        cam = MultipleTargetCamera.instance;
+
         joystickManager = JoystickManager.instance;
         joystickManager.joystickEvent.AddListener(JoystickAddedOrRemoved);
 
         playersScreen = PlayerJoinScreen.instance;
 
         gameState = GameState.MainMenu;
-        Camera.main.transform.DOMove(mainMenuCameraPosition, 0.8f).SetEase(Ease.InCubic);
+        cam.MoveTo(mainMenuCameraPosition);
         playButton.Select();
     }
 
@@ -92,10 +97,7 @@ public class GameManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
 
-        Camera.main.transform.DOMove(playerMenuCameraPosition, 0.8f).SetEase(Ease.InCubic).OnComplete(() =>
-        {
-            gameState = GameState.PlayersReady;
-        });
+        cam.MoveTo(playerMenuCameraPosition, () => { gameState = GameState.PlayersReady; });
     }
 
 
@@ -105,6 +107,22 @@ public class GameManager : MonoBehaviour
         ExhibitUtilities.ExitApplication();
     }
 
+
+    public void StartGame()
+    {
+        gameState = GameState.Game;
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            if (playersScreen.PlayerAdded(i))
+            {
+                players[i].gameObject.SetActive(true);
+                cam.AddTarget(players[i].transform);
+            }
+        }
+
+        playersScreen.Reset();
+    }
 
 
 
@@ -122,7 +140,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (playersScreen.PlayerAdded(i-1))
                     {
-                        // start game!
+                        StartGame();
                     }
                     else
                     {

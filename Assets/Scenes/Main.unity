@@ -28785,8 +28785,8 @@ MonoBehaviour:
   targets: []
   offset: {x: 0, y: 0, z: -10}
   smoothTime: 0.5
-  minZoom: 2000
-  maxZoom: 539
+  minZoom: 200
+  maxZoom: 540
   zoomLimiter: 5500
 --- !u!20 &519420031
 Camera:
@@ -105996,8 +105996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c889f8401622e45bb9a39a94daabc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuCameraPosition: {x: 0, y: -2666, z: -10}
-  playerMenuCameraPosition: {x: 0, y: -1645, z: -10}
+  mainMenuCameraPosition: {x: 0, y: -2666}
+  playerMenuCameraPosition: {x: 0, y: -1645}
   playButton: {fileID: 341148881}
   players:
   - {fileID: 1657812353}

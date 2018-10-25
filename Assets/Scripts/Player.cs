@@ -36,19 +36,6 @@ public class Player : MonoBehaviour
 
 
 
-    public void Activate()
-    {
-
-    }
-
-    public void Deactivate()
-    {
-
-    }
-
-
-
-
 
     public void GetUpgrade()
     {
