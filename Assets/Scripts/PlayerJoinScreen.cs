@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerJoinScreen : MonoBehaviour
@@ -17,7 +19,14 @@ public class PlayerJoinScreen : MonoBehaviour
 
 
     public PlayerJoinSection[] playerJoinSections;
+    public TextMeshProUGUI advanceText;
 
+
+    public void ShowAdvanceText(bool show)
+    {
+        float alpha = show ? 1f : 0f;
+        advanceText.DOFade(alpha, 3f);
+    }
 
 
     public void AddPlayer(Player p, int index)

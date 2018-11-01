@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     public Vector2 playerMenuCameraPosition;
     public Button playButton;
 
+    [Header("Pause Menu")]
+    public RectTransform pauseMenu; 
+    public Button resumeButton;
+
+
 
     [Header("Game")]
     public List<Player> players;
@@ -41,6 +46,8 @@ public class GameManager : MonoBehaviour
         joystickManager.joystickEvent.AddListener(JoystickAddedOrRemoved);
 
         playersScreen = PlayerJoinScreen.instance;
+
+        pauseMenu.gameObject.SetActive(false);
 
         gameState = GameState.MainMenu;
         cam.MoveTo(mainMenuCameraPosition);
@@ -121,6 +128,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        playersScreen.ShowAdvanceText(true);
         playersScreen.Reset();
     }
 
@@ -134,18 +142,20 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetButtonDown("Go " + i.ToString()))
             {
-                Debug.Log("Go " + i.ToString() + " Down");
-
                 if (gameState == GameState.PlayersReady)
                 {
                     if (playersScreen.PlayerAdded(i-1))
                     {
-                        StartGame();
+                        if (playersScreen.GetTotalPlayers() > 1)
+                        {
+                            StartGame();
+                        }
                     }
                     else
                     {
                         Debug.Log("Adding Player " + i.ToString());
                         playersScreen.AddPlayer(players[i - 1], i - 1);
+                        playersScreen.ShowAdvanceText(true);
                     }
                 }
             }

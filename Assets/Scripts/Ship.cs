@@ -31,7 +31,14 @@ public class Ship : MonoBehaviour
     private Rigidbody2D rb;
 
 
+    // tweens
+    private Tween invincibleTween;
+
+
     // starting values
+    private Vector3 startingPosition;
+    private Vector3 startingRotation;
+
     private float startingRotationSpeed = 20f;
     private float startingMaxSpeed = 0.15f;
     private float startingCannonCooldown = 1f;
@@ -46,6 +53,9 @@ public class Ship : MonoBehaviour
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = player.mainShipSprites[0];
+
+        startingPosition = transform.position;
+        startingRotation = transform.eulerAngles;
 
         startingRotationSpeed = rotationSpeed;
         startingMaxSpeed = maxSpeed;
@@ -98,6 +108,17 @@ public class Ship : MonoBehaviour
     }
 
 
+
+    public void ReturnToDock()
+    {
+        transform.position = startingPosition;
+        transform.eulerAngles = startingRotation;
+
+        speed = 0;
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+    }
+
     
 
 
@@ -116,11 +137,13 @@ public class Ship : MonoBehaviour
     {
         if (active)
         {
-            
+            invincibleTween.Kill();
+            invincibleTween = transform.DOScale(2f, 1f).SetEase(Ease.InCubic).SetLoops(-1, LoopType.Yoyo);
         }
         else
         {
-            
+            invincibleTween.Kill();
+            transform.localScale = Vector2.one * 1.5f;
         }
     }
     

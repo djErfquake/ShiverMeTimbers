@@ -72,7 +72,7 @@ public class UpgradeSystem : MonoBehaviour {
             upgradeShipButton.SetActive(false);
         }
 
-        player.Invincible(false);
+        player.GotUpgrade();
     }
 
 
@@ -92,7 +92,7 @@ public class UpgradeSystem : MonoBehaviour {
             Debug.Log("You win!");
         }
 
-        player.Invincible(false);
+        player.GotUpgrade();
     }
 
 

@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
     [Header("Upgrades")]
     public UpgradeSystem upgradeSystem;
+    private Coroutine upgradeCoroutine;
 
 
     [HideInInspector]
@@ -40,8 +41,21 @@ public class Player : MonoBehaviour
     public void GetUpgrade()
     {
         Invincible(true);
+
         upgradeSystem.ShowUpgradeOptions();
         Debug.Log(gameObject.name + " getting upgrade");
+        if (upgradeCoroutine != null) { StopCoroutine(upgradeCoroutine); upgradeCoroutine = null; }
+        upgradeCoroutine = StartCoroutine(ExhibitUtilities.DoActionAfterTime(() =>
+        {
+            upgradeSystem.UpgradeFort();
+            Invincible(false);
+        }, 7f));
+    }
+
+    public void GotUpgrade()
+    {
+        if (upgradeCoroutine != null) { StopCoroutine(upgradeCoroutine); upgradeCoroutine = null; }
+        Invincible(false);
     }
 
 
@@ -67,7 +81,23 @@ public class Player : MonoBehaviour
                 invincible = true;
                 Debug.Log(gameObject.name + " is dead!");
                 offendingPlayer.GetUpgrade();
+
+                StartCoroutine(ExhibitUtilities.DoActionAfterTime(() =>
+                {
+                    Revive();
+                }, 5f));
             }
         }
+    }
+
+
+    private void Revive()
+    {
+        health = 0;
+
+        invincible = false;
+
+        ship.ReturnToDock();
+        ship.SetSprite(mainShipSprites[health], bannerSprites[health]);
     }
 }

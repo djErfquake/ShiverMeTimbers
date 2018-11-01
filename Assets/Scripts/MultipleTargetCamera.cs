@@ -23,7 +23,8 @@ public class MultipleTargetCamera : MonoBehaviour
 
     public float minZoom = 40f;
     public float maxZoom = 10f;
-    public float zoomLimiter = 50f;
+
+    public float padding = 20f;
 
     private Vector3 velocity;
     private Camera cam;
@@ -47,12 +48,19 @@ public class MultipleTargetCamera : MonoBehaviour
 
     private Bounds CreateBounds()
     {
-        Bounds bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Count; i++)
+        if (targets.Count > 0)
         {
-            bounds.Encapsulate(targets[i].position);
+            Bounds bounds = new Bounds(targets[0].position, Vector3.zero);
+            for (int i = 0; i < targets.Count; i++)
+            {
+                bounds.Encapsulate(targets[i].position);
+            }
+            return bounds;
         }
-        return bounds;
+        else
+        {
+            return new Bounds();
+        }
     }
 
 
@@ -64,9 +72,17 @@ public class MultipleTargetCamera : MonoBehaviour
     }
 
 
+
     private void Zoom(Bounds bounds)
     {
-        float newZoom = Mathf.Lerp(maxZoom, minZoom, bounds.size.x / zoomLimiter);
+        float desiredSize = bounds.size.y / 2;
+
+        float xy = ((16f / 9f) * bounds.size.x) / 4f;
+        desiredSize = Mathf.Max(desiredSize, xy);
+
+        float percentage = (desiredSize - minZoom) / (maxZoom - minZoom);
+        float newZoom = minZoom + Mathf.Lerp(padding, maxZoom - minZoom + padding, percentage);
+
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, newZoom, Time.deltaTime);
     }
 
@@ -97,5 +113,20 @@ public class MultipleTargetCamera : MonoBehaviour
     public void ClearTargets()
     {
         targets.Clear();
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Bounds bounds = CreateBounds();
+
+        Gizmos.color = Color.magenta;
+        float left = bounds.center.x - (bounds.size.x / 2);
+        float right = bounds.center.x + (bounds.size.x / 2);
+        float top = bounds.center.y - (bounds.size.y / 2);
+        float bottom = bounds.center.y + (bounds.size.y / 2);
+        Gizmos.DrawLine(new Vector2(left, top), new Vector2(right, top));
+        Gizmos.DrawLine(new Vector2(right, top), new Vector2(right, bottom));
+        Gizmos.DrawLine(new Vector2(left, bottom), new Vector2(right, bottom));
+        Gizmos.DrawLine(new Vector2(left, top), new Vector2(left, bottom));
     }
 }
