@@ -134,6 +134,15 @@ public class GameManager : MonoBehaviour
 
 
 
+    public void Pause()
+    {
+        Time.timeScale = (Time.timeScale == 1f) ? 0f : 1f;
+        pauseMenu.gameObject.SetActive(Time.timeScale == 0f);
+        if (Time.timeScale == 0f) { resumeButton.Select(); }
+        for (int i = 0; i < players.Count; i++) { players[i].Pause(Time.timeScale == 0f); }
+    }
+
+
 
 
     private void Update()
@@ -165,6 +174,29 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Removing Player " + i.ToString());
                     playersScreen.RemovePlayer(i-1);
+                }
+            }
+            else if (Input.GetButtonDown("Start " + i.ToString()))
+            {
+                if (gameState == GameState.Game)
+                {
+                    Pause();
+                }
+                else if (gameState == GameState.PlayersReady)
+                {
+                    if (playersScreen.PlayerAdded(i - 1))
+                    {
+                        if (playersScreen.GetTotalPlayers() > 1)
+                        {
+                            StartGame();
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Adding Player " + i.ToString());
+                        playersScreen.AddPlayer(players[i - 1], i - 1);
+                        playersScreen.ShowAdvanceText(true);
+                    }
                 }
             }
         }

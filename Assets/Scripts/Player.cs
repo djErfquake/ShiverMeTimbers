@@ -36,6 +36,12 @@ public class Player : MonoBehaviour
 
 
 
+    public void Pause(bool pause)
+    {
+        ship.Pause(pause);
+    }
+
+
 
 
     public void GetUpgrade()

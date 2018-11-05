@@ -76,7 +76,7 @@ public class Ship : MonoBehaviour
 
     private void Update()
     {
-        if (!player.invincible)
+        if (!player.invincible && !paused)
         {
             // rotate
             transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
@@ -104,6 +104,21 @@ public class Ship : MonoBehaviour
                     cannons[i].Fire();
                 }
             }
+        }
+    }
+
+
+    private bool paused = false;
+    public void Pause(bool pause)
+    {
+        paused = pause;
+
+        if (rb != null)
+        {
+            rb.isKinematic = pause;
+            rb.constraints = (pause) ? RigidbodyConstraints2D.FreezeAll : RigidbodyConstraints2D.None;
+            rb.velocity = Vector2.zero;
+            rb.angularDrag = 0f;
         }
     }
 
