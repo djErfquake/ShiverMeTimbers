@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using EZCameraShake;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -76,6 +77,8 @@ public class Player : MonoBehaviour
     {
         if (!invincible)
         {
+            CameraShaker.Instance.ShakeOnce(1500f, 7f, 0.1f, 1f);
+
             health++;
             if (health < mainShipSprites.Count)
             {

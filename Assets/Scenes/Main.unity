@@ -14450,7 +14450,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -14891,7 +14891,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -28947,6 +28947,49 @@ MonoBehaviour:
   colorSection: {fileID: 398050648}
   ship: {fileID: 761523962}
   playerActive: 0
+--- !u!1 &412393842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412393843}
+  - component: {fileID: 412393844}
+  m_Layer: 0
+  m_Name: Camera Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &412393843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412393842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 519420032}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412393844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412393842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultPosInfluence: {x: 0.15, y: 0.15, z: 0}
+  DefaultRotInfluence: {x: 0, y: 0, z: 0}
 --- !u!1 &499778569
 GameObject:
   m_ObjectHideFlags: 0
@@ -29252,13 +29295,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2666, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1260657171}
   - {fileID: 1602699496}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 412393843}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &527056164 stripped
@@ -29398,6 +29441,11 @@ MonoBehaviour:
   invincible: 0
   upgradeSystem: {fileID: 2078330338}
   joystickActive: 0
+  cameraShakeTest: 285
+  cameraShakeFadeIn: 0.1
+  cameraShakeFadeOut: 1
+  cameraShakeMagnitude: 1500
+  cameraShakeRoughness: 7
 --- !u!114 &579989615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58959,6 +59007,11 @@ MonoBehaviour:
   invincible: 0
   upgradeSystem: {fileID: 188201591}
   joystickActive: 0
+  cameraShakeTest: 285
+  cameraShakeFadeIn: 0.1
+  cameraShakeFadeOut: 1
+  cameraShakeMagnitude: 1500
+  cameraShakeRoughness: 7
 --- !u!114 &1304867032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65525,6 +65578,11 @@ MonoBehaviour:
   invincible: 0
   upgradeSystem: {fileID: 1636194445}
   joystickActive: 0
+  cameraShakeTest: 284
+  cameraShakeFadeIn: 0.1
+  cameraShakeFadeOut: 1
+  cameraShakeMagnitude: 1500
+  cameraShakeRoughness: 7
 --- !u!212 &1657812354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65727,6 +65785,11 @@ MonoBehaviour:
   invincible: 0
   upgradeSystem: {fileID: 1478745964}
   joystickActive: 0
+  cameraShakeTest: 285
+  cameraShakeFadeIn: 0.1
+  cameraShakeFadeOut: 1
+  cameraShakeMagnitude: 1500
+  cameraShakeRoughness: 7
 --- !u!114 &1686475809
 MonoBehaviour:
   m_ObjectHideFlags: 0
