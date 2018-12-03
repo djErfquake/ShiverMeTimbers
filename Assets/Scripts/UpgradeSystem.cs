@@ -19,8 +19,8 @@ public class UpgradeSystem : MonoBehaviour {
 
     [Header("UI")]
     public GameObject ui;
-    public GameObject upgradeShipButton;
     public MultipleTargetCamera cam;
+    public Image fortButton, shipButton;
 
     [Header("Player")]
     public Player player;
@@ -32,13 +32,17 @@ public class UpgradeSystem : MonoBehaviour {
     private int fortUpgradeCount = 0;
 
 
+    private bool upgradeActive = false;
+    public bool UpgradeActive { get { return upgradeActive; } }
+
 
 
     public void ShowUpgradeOptions()
     {
         ui.SetActive(true);
         cam.targets.Add(ui.transform);
-        upgradeShipButton.GetComponent<Button>().Select();
+
+        upgradeActive = true;
     }
 
 
@@ -46,6 +50,8 @@ public class UpgradeSystem : MonoBehaviour {
     {
         cam.targets.Remove(ui.transform);
         ui.SetActive(false);
+
+        upgradeActive = false;
     }
 
 
@@ -69,7 +75,7 @@ public class UpgradeSystem : MonoBehaviour {
         shipUpgradeCount++;
         if (shipUpgradeCount >= shipUpgrades.Count)
         {
-            upgradeShipButton.SetActive(false);
+            shipButton.enabled = false;
         }
 
         player.GotUpgrade();
@@ -101,8 +107,7 @@ public class UpgradeSystem : MonoBehaviour {
         Hide();
 
         shipUpgradeCount = 0;
-        upgradeShipButton.SetActive(true);
-        upgradeShipButton.GetComponent<Button>().Select();
+        shipButton.enabled = true;
 
         player.ship.Reset();
     }

@@ -18,7 +18,8 @@ public class PlayerJoinScreen : MonoBehaviour
     #endregion
 
 
-    public PlayerJoinSection[] playerJoinSections;
+    public Player[] players;
+    private Dictionary<Player, PlayerJoinSection> playerJoinSections = new Dictionary<Player, PlayerJoinSection>();
     public TextMeshProUGUI advanceText;
 
 
@@ -29,46 +30,46 @@ public class PlayerJoinScreen : MonoBehaviour
     }
 
 
-    public void AddPlayer(Player p, int index)
+    public void AddPlayer(Player p)
     {
         int numOfPlayers = GetTotalPlayers() + 1;
 
         int addedPlayers = 0;
-        for (int i = 0; i < playerJoinSections.Length; i++)
+        foreach (KeyValuePair<Player, PlayerJoinSection> joinSection in playerJoinSections)
         {
             float newWidth = Screen.width / numOfPlayers;
             float newX = newWidth * addedPlayers;
 
-            if (i == index)
+            if (joinSection.Key == p)
             {
-                playerJoinSections[i].AddPlayer(p, newX, newWidth);
+                joinSection.Value.AddPlayer(p, newX, newWidth);
                 addedPlayers++;
             }
-            else if (playerJoinSections[i].playerActive)
+            else if (joinSection.Value.playerActive)
             {
-                playerJoinSections[i].SetNewSize(newX, newWidth);
+                joinSection.Value.SetNewSize(newX, newWidth);
                 addedPlayers++;
             }
         }
     }
 
 
-    public void RemovePlayer(int playerIndex)
+    public void RemovePlayer(Player p)
     {
-        playerJoinSections[playerIndex].RemovePlayer();
+        playerJoinSections[p].RemovePlayer();
 
         int numOfPlayers = GetTotalPlayers();
         if (numOfPlayers > 0)
         {
             int addedPlayers = 0;
-            for (int i = 0; i < playerJoinSections.Length; i++)
+            foreach (KeyValuePair<Player, PlayerJoinSection> joinSection in playerJoinSections)
             {
                 float newWidth = Screen.width / numOfPlayers;
                 float newX = newWidth * addedPlayers;
 
-                if (playerJoinSections[i].playerActive)
+                if (joinSection.Value.playerActive)
                 {
-                    playerJoinSections[i].SetNewSize(newX, newWidth, 1f);
+                    joinSection.Value.SetNewSize(newX, newWidth, 1f);
                     addedPlayers++;
                 }
             }
@@ -81,9 +82,9 @@ public class PlayerJoinScreen : MonoBehaviour
     public int GetTotalPlayers()
     {
         int numPlayers = 0;
-        for (int i = 0; i < playerJoinSections.Length; i++)
+        foreach (KeyValuePair<Player, PlayerJoinSection> joinSection in playerJoinSections)
         {
-            if (playerJoinSections[i].playerActive)
+            if (joinSection.Value.playerActive)
             {
                 numPlayers++;
             }
@@ -91,10 +92,9 @@ public class PlayerJoinScreen : MonoBehaviour
         return numPlayers;
     }
 
-
-    public bool PlayerAdded(int index)
+    public bool PlayerAdded(Player p)
     {
-        return playerJoinSections[index].playerActive;
+        return playerJoinSections[p].playerActive;
     }
 
 
@@ -102,15 +102,20 @@ public class PlayerJoinScreen : MonoBehaviour
 
     private void Start()
     {
+        playerJoinSections.Add(players[0], players[0].playerJoinSection);
+        playerJoinSections.Add(players[1], players[1].playerJoinSection);
+        playerJoinSections.Add(players[2], players[2].playerJoinSection);
+        playerJoinSections.Add(players[3], players[3].playerJoinSection);
+
         Reset();
     }
 
 
     public void Reset()
     {
-        for (int i = 0; i < playerJoinSections.Length; i++)
+        foreach (KeyValuePair<Player, PlayerJoinSection> joinSection in playerJoinSections)
         {
-            playerJoinSections[i].Reset();
+            joinSection.Value.Reset();
         }
     }
 

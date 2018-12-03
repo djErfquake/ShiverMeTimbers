@@ -79,10 +79,12 @@ public class Ship : MonoBehaviour
         if (!player.invincible && !paused)
         {
             // rotate
-            transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
+            //transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed * speed);
+            transform.Rotate(Vector3.back * player.joystick.GetJoystickState(PlayerJoystick.Buttons.Horizontal) * rotationSpeed * speed);
 
             // move forward
-            if (Input.GetButton("Go " + player.playerNumber))
+            //if (Input.GetButton("Go " + player.playerNumber))
+            if (player.joystick.GetButtonState(PlayerJoystick.Buttons.Go))
             {
                 speed = Mathf.Lerp(speed, maxSpeed, moveSpeed);
                 rb.angularVelocity = 0;
@@ -97,7 +99,8 @@ public class Ship : MonoBehaviour
 
 
             // fire cannons
-            if (Input.GetButton("Fire " + player.playerNumber))
+            //if (Input.GetButton("Fire " + player.playerNumber))
+            if (player.joystick.GetButtonState(PlayerJoystick.Buttons.Fire))
             {
                 for (int i = 0; i < cannons.Count; i++)
                 {

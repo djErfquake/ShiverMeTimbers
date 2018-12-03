@@ -24,7 +24,8 @@ public class ShipRotate : MonoBehaviour
         if (player != null)
         {
             // rotate
-            transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed);
+            //transform.Rotate(Vector3.back * Input.GetAxis("Horizontal " + player.playerNumber) * rotationSpeed);
+            transform.Rotate(Vector3.back * player.joystick.GetJoystickState(PlayerJoystick.Buttons.Horizontal) * rotationSpeed);
         }
     }
 }

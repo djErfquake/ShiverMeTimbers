@@ -7,11 +7,12 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-    public enum GameState { MainMenu, PlayersReady, Game, End };
+    public enum ButtonName { Go, Fire, Start, Back }
+
+    public enum GameState { MainMenu, PlayerAddition, Game, End };
     private GameState gameState = GameState.Game;
 
     private MultipleTargetCamera cam;
-    private JoystickManager joystickManager;
     private PlayerJoinScreen playersScreen;
 
 
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Game")]
     public List<Player> players;
+    private Dictionary<XInputDotNetPure.PlayerIndex, bool> activeJoysticks;
 
 
 
@@ -42,8 +44,12 @@ public class GameManager : MonoBehaviour
     {
         cam = MultipleTargetCamera.instance;
 
-        joystickManager = JoystickManager.instance;
-        joystickManager.joystickEvent.AddListener(JoystickAddedOrRemoved);
+        activeJoysticks = new Dictionary<XInputDotNetPure.PlayerIndex, bool>();
+        for (int i = 0; i < players.Count; i++)
+        {
+            activeJoysticks.Add(players[i].joystick.playerIndex, false);
+            players[i].joystick.joystickEvent.AddListener(JoystickEventHandler);
+        }
 
         playersScreen = PlayerJoinScreen.instance;
 
@@ -55,44 +61,66 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void JoystickAddedOrRemoved(JoystickEvent.JoystickStatus status, int index)
+    private Player GetPlayerFromPlayerIndex(XInputDotNetPure.PlayerIndex playerIndex)
     {
-        if (status == JoystickEvent.JoystickStatus.JoystickAdded)
+        for (int i = 0; i < players.Count; i++)
         {
-            switch (gameState)
-            {
-                case GameState.MainMenu:
-                    break;
-                case GameState.PlayersReady:
-                    break;
-                case GameState.Game:
-                    break;
-                case GameState.End:
-                    break;
-            }
-
-            players[index].joystickActive = true;
-
-            //players[index].Activate();
+            if (players[i].joystick.playerIndex == playerIndex) { return players[i]; }
         }
-        else if (status == JoystickEvent.JoystickStatus.JoystickRemoved)
+        return null;
+    }
+
+
+    private void JoystickEventHandler(JoystickData e)
+    {
+        if (e.joystickAction == JoystickData.JoystickAction.Added)
         {
-            switch (gameState)
+            Debug.Log("added player " + e.playerIndex.ToString());
+            activeJoysticks[e.playerIndex] = true;
+        }
+        else if (e.joystickAction == JoystickData.JoystickAction.Removed)
+        {
+            Debug.Log("removed player " + e.playerIndex.ToString());
+            activeJoysticks[e.playerIndex] = false;
+        }
+        else if (e.joystickAction == JoystickData.JoystickAction.Button)
+        {
+            switch (e.button)
             {
-                case GameState.MainMenu:
+                case PlayerJoystick.Buttons.Pause:
+                    if (gameState == GameState.PlayerAddition)
+                    {
+                        Player p = GetPlayerFromPlayerIndex(e.playerIndex);
+                        p.joystick.Vibrate();
+
+                        if (!playersScreen.PlayerAdded(p)) { playersScreen.AddPlayer(p); }
+                        else { StartGame(); }
+                    }
+                    else if (gameState == GameState.Game)
+                    {
+                        Pause();
+                    }
                     break;
-                case GameState.PlayersReady:
-                    playersScreen.RemovePlayer(index);
+                case PlayerJoystick.Buttons.Yes:
+                    if (gameState == GameState.PlayerAddition)
+                    {
+                        Player p = GetPlayerFromPlayerIndex(e.playerIndex);
+                        p.joystick.Vibrate();
+
+                        if (!playersScreen.PlayerAdded(p)) { playersScreen.AddPlayer(p); }
+                        else { StartGame(); }
+                    }
                     break;
-                case GameState.Game:
-                    break;
-                case GameState.End:
+                case PlayerJoystick.Buttons.No:
+                    if (gameState == GameState.PlayerAddition)
+                    {
+                        Player p = GetPlayerFromPlayerIndex(e.playerIndex);
+                        p.joystick.Vibrate();
+
+                        if (playersScreen.PlayerAdded(p)) { playersScreen.RemovePlayer(p); }
+                    }
                     break;
             }
-
-            players[index].joystickActive = false;
-
-            //players[index].Deactivate();
         }
     }
 
@@ -104,7 +132,7 @@ public class GameManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
 
-        cam.MoveTo(playerMenuCameraPosition, () => { gameState = GameState.PlayersReady; });
+        cam.MoveTo(playerMenuCameraPosition, () => { gameState = GameState.PlayerAddition; });
     }
 
 
@@ -121,9 +149,11 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < players.Count; i++)
         {
-            if (playersScreen.PlayerAdded(i))
+            bool playing = playersScreen.PlayerAdded(players[i]);
+            players[i].StartGame(playing);
+
+            if (playing)
             {
-                players[i].gameObject.SetActive(true);
                 cam.AddTarget(players[i].transform);
             }
         }
@@ -140,65 +170,5 @@ public class GameManager : MonoBehaviour
         pauseMenu.gameObject.SetActive(Time.timeScale == 0f);
         if (Time.timeScale == 0f) { resumeButton.Select(); }
         for (int i = 0; i < players.Count; i++) { players[i].Pause(Time.timeScale == 0f); }
-    }
-
-
-
-
-    private void Update()
-    {
-        for (int i = 1; i <= players.Count; i++)
-        {
-            if (Input.GetButtonDown("Go " + i.ToString()))
-            {
-                if (gameState == GameState.PlayersReady)
-                {
-                    if (playersScreen.PlayerAdded(i-1))
-                    {
-                        if (playersScreen.GetTotalPlayers() > 1)
-                        {
-                            StartGame();
-                        }
-                    }
-                    else
-                    {
-                        Debug.Log("Adding Player " + i.ToString());
-                        playersScreen.AddPlayer(players[i - 1], i - 1);
-                        playersScreen.ShowAdvanceText(true);
-                    }
-                }
-            }
-            else if (Input.GetButtonDown("Back " + i.ToString()))
-            {
-                if (gameState == GameState.PlayersReady)
-                {
-                    Debug.Log("Removing Player " + i.ToString());
-                    playersScreen.RemovePlayer(i-1);
-                }
-            }
-            else if (Input.GetButtonDown("Start " + i.ToString()))
-            {
-                if (gameState == GameState.Game)
-                {
-                    Pause();
-                }
-                else if (gameState == GameState.PlayersReady)
-                {
-                    if (playersScreen.PlayerAdded(i - 1))
-                    {
-                        if (playersScreen.GetTotalPlayers() > 1)
-                        {
-                            StartGame();
-                        }
-                    }
-                    else
-                    {
-                        Debug.Log("Adding Player " + i.ToString());
-                        playersScreen.AddPlayer(players[i - 1], i - 1);
-                        playersScreen.ShowAdvanceText(true);
-                    }
-                }
-            }
-        }
     }
 }

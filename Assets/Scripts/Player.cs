@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
-    public string playerNumber = "Any";
+    public PlayerJoystick joystick;
 
     [Header("Ship")]
     public Ship ship;
@@ -17,10 +18,12 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public bool invincible = false;
 
-
     [Header("Upgrades")]
     public UpgradeSystem upgradeSystem;
     private Coroutine upgradeCoroutine;
+
+    [Header("Join Screen")]
+    public PlayerJoinSection playerJoinSection;
 
 
     [HideInInspector]
@@ -78,6 +81,7 @@ public class Player : MonoBehaviour
         if (!invincible)
         {
             CameraShaker.Instance.ShakeOnce(1500f, 7f, 0.1f, 1f);
+            joystick.Vibrate();
 
             health++;
             if (health < mainShipSprites.Count)
@@ -108,5 +112,15 @@ public class Player : MonoBehaviour
 
         ship.ReturnToDock();
         ship.SetSprite(mainShipSprites[health], bannerSprites[health]);
+    }
+
+    public void StartGame(bool playing)
+    {
+        ship.enabled = playing;
+        SpriteRenderer[] sr = GetComponentsInChildren<SpriteRenderer>();
+        for (int i = 0; i < sr.Length; i++)
+        {
+            sr[i].enabled = playing;
+        }
     }
 }
