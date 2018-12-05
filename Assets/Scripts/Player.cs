@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public PlayerJoystick joystick;
 
     [Header("Ship")]
+    public Color color;
     public Ship ship;
 
     [Header("Health")]
@@ -133,6 +134,18 @@ public class Player : MonoBehaviour
         for (int i = 0; i < sr.Length; i++)
         {
             sr[i].enabled = playing;
+        }
+
+        Revive();
+    }
+
+    public void StopGame()
+    {
+        ship.enabled = false;
+        SpriteRenderer[] sr = GetComponentsInChildren<SpriteRenderer>();
+        for (int i = 0; i < sr.Length; i++)
+        {
+            sr[i].enabled = false;
         }
     }
 }

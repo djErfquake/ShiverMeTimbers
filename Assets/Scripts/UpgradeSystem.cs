@@ -104,7 +104,7 @@ public class UpgradeSystem : MonoBehaviour {
 
         if (fortUpgradeCount >= fortUpgrades.Count)
         {
-            Debug.Log("You win!");
+            GameManager.instance.ShowWinMenu(player);
         }
 
         player.GotUpgrade();

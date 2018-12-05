@@ -7,6 +7,19 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
+
+    #region singleton
+    // singleton
+    public static GameManager instance;
+    private void Awake()
+    {
+        if (instance && instance != this) { Destroy(gameObject); return; }
+        instance = this;
+    }
+    #endregion
+
+
+
     public enum ButtonName { Go, Fire, Start, Back }
 
     public enum GameState { MainMenu, PlayerAddition, Game, End };
@@ -26,6 +39,11 @@ public class GameManager : MonoBehaviour
     [Header("Pause Menu")]
     public RectTransform pauseMenu; 
     public Button resumeButton;
+
+    [Header("Winner Menu")]
+    public RectTransform winnerMenu;
+    public Image winBannerImage;
+    public Button winAgainButton;
 
 
 
@@ -54,10 +72,9 @@ public class GameManager : MonoBehaviour
         playersScreen = PlayerJoinScreen.instance;
 
         pauseMenu.gameObject.SetActive(false);
+        winnerMenu.gameObject.SetActive(false);
 
-        gameState = GameState.MainMenu;
-        cam.MoveTo(mainMenuCameraPosition);
-        playButton.Select();
+        GoToTitle();
     }
 
 
@@ -154,7 +171,12 @@ public class GameManager : MonoBehaviour
 
             if (playing)
             {
+                players[i].gameObject.SetActive(true);
                 cam.AddTarget(players[i].transform);
+            }
+            else
+            {
+                players[i].gameObject.SetActive(false);
             }
         }
 
@@ -164,11 +186,90 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void Pause()
+    public void Pause(bool showMenu = true)
     {
         Time.timeScale = (Time.timeScale == 1f) ? 0f : 1f;
-        pauseMenu.gameObject.SetActive(Time.timeScale == 0f);
-        if (Time.timeScale == 0f) { resumeButton.Select(); }
         for (int i = 0; i < players.Count; i++) { players[i].Pause(Time.timeScale == 0f); }
+
+        if (showMenu)
+        {
+            bool isPaused = Time.timeScale == 0f;
+
+            if (isPaused)
+            {
+                pauseMenu.gameObject.SetActive(true);
+                pauseMenu.localScale = Vector2.zero;
+                pauseMenu.DOScale(1, 0.8f).SetEase(Ease.OutElastic);
+
+                resumeButton.Select();
+            }
+            else
+            {
+                pauseMenu.localScale = Vector2.one;
+                pauseMenu.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
+                {
+                    pauseMenu.gameObject.SetActive(false);
+                });
+            }
+        }
     }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1f;
+        for (int i = 0; i < players.Count; i++) { players[i].Pause(Time.timeScale == 1f); }
+
+        pauseMenu.localScale = Vector2.one;
+        pauseMenu.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
+        {
+            pauseMenu.gameObject.SetActive(false);
+        });
+    }
+
+
+    public void ShowWinMenu(Player winningPlayer)
+    {
+        Pause(false);
+
+        winBannerImage.color = winningPlayer.color;
+
+        winnerMenu.gameObject.SetActive(true);
+        winnerMenu.localScale = Vector2.zero;
+        winnerMenu.DOScale(1, 0.8f).SetEase(Ease.OutElastic);
+
+        winAgainButton.Select();
+    }
+
+    private void HideWinMenu()
+    {
+        winnerMenu.localScale = Vector2.one;
+        winnerMenu.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
+        {
+            winnerMenu.gameObject.SetActive(false);
+        });
+    }
+
+
+    public void ResetGame()
+    {
+        HideWinMenu();
+        Pause();
+
+        StartGame();
+    }
+
+
+    public void GoToTitle()
+    {
+        UnPause();
+
+        for (int i = 0; i < players.Count; i++) { players[i].StopGame(); }
+
+        gameState = GameState.MainMenu;
+        cam.ClearTargets();
+        cam.MoveTo(mainMenuCameraPosition);
+        playButton.Select();
+    }
+
+
 }
