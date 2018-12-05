@@ -14410,7 +14410,7 @@ MonoBehaviour:
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
 --- !u!114 &188201589
 MonoBehaviour:
@@ -14418,7 +14418,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 188201586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -14459,8 +14459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 188201586}
   cam: {fileID: 519420030}
-  fortButton: {fileID: 0}
-  shipButton: {fileID: 0}
+  fortButton: {fileID: 564368613}
+  shipButton: {fileID: 1145637403}
   player: {fileID: 1304867031}
   fortUpgrades:
   - {fileID: 755905447}
@@ -51265,7 +51265,7 @@ MonoBehaviour:
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
 --- !u!114 &1478745962
 MonoBehaviour:
@@ -51273,7 +51273,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478745959}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -51314,8 +51314,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 1478745959}
   cam: {fileID: 519420030}
-  fortButton: {fileID: 0}
-  shipButton: {fileID: 0}
+  fortButton: {fileID: 1460034794}
+  shipButton: {fileID: 656106045}
   player: {fileID: 1686475808}
   fortUpgrades:
   - {fileID: 2037173885}
@@ -52077,7 +52077,7 @@ MonoBehaviour:
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
 --- !u!114 &1636194443
 MonoBehaviour:
@@ -52085,7 +52085,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1636194440}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -52126,8 +52126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 1636194440}
   cam: {fileID: 519420030}
-  fortButton: {fileID: 0}
-  shipButton: {fileID: 0}
+  fortButton: {fileID: 1446184514}
+  shipButton: {fileID: 1482957761}
   player: {fileID: 1657812353}
   fortUpgrades:
   - {fileID: 708036474}
@@ -93475,7 +93475,7 @@ MonoBehaviour:
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
 --- !u!114 &2078330336
 MonoBehaviour:
@@ -93483,7 +93483,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2078330333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -93524,8 +93524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 2078330333}
   cam: {fileID: 519420030}
-  fortButton: {fileID: 0}
-  shipButton: {fileID: 0}
+  fortButton: {fileID: 2011288341}
+  shipButton: {fileID: 1129183426}
   player: {fileID: 579989614}
   fortUpgrades:
   - {fileID: 978295086}

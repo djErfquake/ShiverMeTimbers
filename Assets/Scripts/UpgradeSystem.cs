@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +21,7 @@ public class UpgradeSystem : MonoBehaviour {
     [Header("UI")]
     public GameObject ui;
     public MultipleTargetCamera cam;
-    public Image fortButton, shipButton;
+    public GameObject fortButton, shipButton;
 
     [Header("Player")]
     public Player player;
@@ -42,43 +43,51 @@ public class UpgradeSystem : MonoBehaviour {
         ui.SetActive(true);
         cam.targets.Add(ui.transform);
 
+        if (shipUpgradeCount >= shipUpgrades.Count) { shipButton.SetActive(false); }
+
+        ui.transform.localScale = Vector2.zero;
+        ui.transform.DOScale(1, 0.8f).SetEase(Ease.OutElastic);
+
         upgradeActive = true;
     }
 
 
     public void HideUpgradeOptions()
     {
-        cam.targets.Remove(ui.transform);
-        ui.SetActive(false);
-
         upgradeActive = false;
+
+        ui.transform.localScale = Vector2.one;
+        ui.transform.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
+        {
+            cam.targets.Remove(ui.transform);
+            ui.SetActive(false);
+        });
     }
 
 
     public void UpgradeShip()
     {
-        HideUpgradeOptions();
-
-        switch (shipUpgrades[shipUpgradeCount])
+        if (shipUpgradeCount < shipUpgrades.Count)
         {
-            case SHIP_ROTATION:
-                player.ship.rotationSpeed += 0.1f;
-                break;
-            case SHIP_SPEED:
-                player.ship.maxSpeed += 1f;
-                break;
-            case SHIP_FIRE_RATE:
-                for (int i = 0; i < player.ship.cannons.Count; i++) { player.ship.cannons[i].cooldown -= 0.3f; }
-                break;
-        }
+            HideUpgradeOptions();
 
-        shipUpgradeCount++;
-        if (shipUpgradeCount >= shipUpgrades.Count)
-        {
-            shipButton.enabled = false;
-        }
+            switch (shipUpgrades[shipUpgradeCount])
+            {
+                case SHIP_ROTATION:
+                    player.ship.rotationSpeed += 0.1f;
+                    break;
+                case SHIP_SPEED:
+                    player.ship.maxSpeed += 1f;
+                    break;
+                case SHIP_FIRE_RATE:
+                    for (int i = 0; i < player.ship.cannons.Count; i++) { player.ship.cannons[i].cooldown -= 0.3f; }
+                    break;
+            }
 
-        player.GotUpgrade();
+            shipUpgradeCount++;
+
+            player.GotUpgrade();
+        }
     }
 
 
@@ -107,7 +116,7 @@ public class UpgradeSystem : MonoBehaviour {
         Hide();
 
         shipUpgradeCount = 0;
-        shipButton.enabled = true;
+        shipButton.SetActive(true);
 
         player.ship.Reset();
     }

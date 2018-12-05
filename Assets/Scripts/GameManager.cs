@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
                         p.joystick.Vibrate();
 
                         if (!playersScreen.PlayerAdded(p)) { playersScreen.AddPlayer(p); }
-                        else { StartGame(); }
+                        else  if (playersScreen.GetTotalPlayers() > 1) { StartGame(); }
                     }
                     else if (gameState == GameState.Game)
                     {
@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
                         p.joystick.Vibrate();
 
                         if (!playersScreen.PlayerAdded(p)) { playersScreen.AddPlayer(p); }
-                        else { StartGame(); }
+                        else if (playersScreen.GetTotalPlayers() > 1) { StartGame(); }
                     }
                     break;
                 case PlayerJoystick.Buttons.No:

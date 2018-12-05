@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
     {
         ship.Setup(this);
         upgradeSystem.Hide();
+        joystick.joystickEvent.AddListener(JoystickEventHandler);
     }
 
 
@@ -43,6 +44,15 @@ public class Player : MonoBehaviour
     public void Pause(bool pause)
     {
         ship.Pause(pause);
+    }
+
+    private void JoystickEventHandler(JoystickData e)
+    {
+        if (upgradeSystem.UpgradeActive)
+        {
+            if (e.button == PlayerJoystick.Buttons.Yes) { upgradeSystem.UpgradeFort(); }
+            else if (e.button == PlayerJoystick.Buttons.No) { upgradeSystem.UpgradeShip(); }
+        }
     }
 
 
@@ -61,6 +71,8 @@ public class Player : MonoBehaviour
             Invincible(false);
         }, 7f));
     }
+
+    
 
     public void GotUpgrade()
     {
