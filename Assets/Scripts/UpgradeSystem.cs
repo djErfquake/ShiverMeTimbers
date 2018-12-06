@@ -69,6 +69,8 @@ public class UpgradeSystem : MonoBehaviour {
     {
         if (shipUpgradeCount < shipUpgrades.Count)
         {
+            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.ShipUpgrade);
+
             HideUpgradeOptions();
 
             switch (shipUpgrades[shipUpgradeCount])
@@ -93,6 +95,8 @@ public class UpgradeSystem : MonoBehaviour {
 
     public void UpgradeFort()
     {
+        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.FortUpgrade);
+
         HideUpgradeOptions();
 
         fortUpgradeCount++;

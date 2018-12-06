@@ -31,6 +31,8 @@ public class Cannon : MonoBehaviour
     {
         if (canFire)
         {
+            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Cannon);
+
             StartCoroutine(JustFired());
             //Instantiate(cannonballPrefab, cannon.transform.position, cannon.transform.rotation);
             GameObject cannonball = Instantiate(cannonballPrefab);

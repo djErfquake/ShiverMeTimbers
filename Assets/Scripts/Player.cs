@@ -93,6 +93,8 @@ public class Player : MonoBehaviour
     {
         if (!invincible)
         {
+            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Hit);
+
             CameraShaker.Instance.ShakeOnce(1500f, 7f, 0.1f, 1f);
             joystick.Vibrate();
 
@@ -104,6 +106,8 @@ public class Player : MonoBehaviour
 
             if (health == mainShipSprites.Count - 1)
             {
+                AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Death);
+
                 invincible = true;
                 Debug.Log(gameObject.name + " is dead!");
                 offendingPlayer.GetUpgrade();

@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Menus")]
     public Vector2 mainMenuCameraPosition;
+    public float mainMenuCameraSize;
     public Vector2 playerMenuCameraPosition;
     public Button playButton;
 
@@ -92,11 +93,13 @@ public class GameManager : MonoBehaviour
     {
         if (e.joystickAction == JoystickData.JoystickAction.Added)
         {
+            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
             Debug.Log("added player " + e.playerIndex.ToString());
             activeJoysticks[e.playerIndex] = true;
         }
         else if (e.joystickAction == JoystickData.JoystickAction.Removed)
         {
+            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
             Debug.Log("removed player " + e.playerIndex.ToString());
             activeJoysticks[e.playerIndex] = false;
         }
@@ -121,6 +124,8 @@ public class GameManager : MonoBehaviour
                 case PlayerJoystick.Buttons.Yes:
                     if (gameState == GameState.PlayerAddition)
                     {
+                        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
                         Player p = GetPlayerFromPlayerIndex(e.playerIndex);
                         p.joystick.Vibrate();
 
@@ -131,6 +136,8 @@ public class GameManager : MonoBehaviour
                 case PlayerJoystick.Buttons.No:
                     if (gameState == GameState.PlayerAddition)
                     {
+                        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
                         Player p = GetPlayerFromPlayerIndex(e.playerIndex);
                         p.joystick.Vibrate();
 
@@ -147,15 +154,19 @@ public class GameManager : MonoBehaviour
 
     public void MainMenuPlaySelected()
     {
+        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
         EventSystem.current.SetSelectedGameObject(null);
 
-        cam.MoveTo(playerMenuCameraPosition, () => { gameState = GameState.PlayerAddition; });
+        cam.MoveTo(playerMenuCameraPosition, 540, () => { gameState = GameState.PlayerAddition; });
     }
 
 
 
     public void MainMenuExitSelected()
     {
+        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
         ExhibitUtilities.ExitApplication();
     }
 
@@ -163,6 +174,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         gameState = GameState.Game;
+
+        AudioManager.instance.PlayThemeMusic();
 
         for (int i = 0; i < players.Count; i++)
         {
@@ -216,8 +229,10 @@ public class GameManager : MonoBehaviour
 
     public void UnPause()
     {
+        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
         Time.timeScale = 1f;
-        for (int i = 0; i < players.Count; i++) { players[i].Pause(Time.timeScale == 1f); }
+        for (int i = 0; i < players.Count; i++) { players[i].Pause(false); }
 
         pauseMenu.localScale = Vector2.one;
         pauseMenu.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
@@ -242,6 +257,8 @@ public class GameManager : MonoBehaviour
 
     private void HideWinMenu()
     {
+        AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
+
         winnerMenu.localScale = Vector2.one;
         winnerMenu.DOScale(0, 0.4f).SetEase(Ease.InCubic).OnComplete(() =>
         {
@@ -253,7 +270,7 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         HideWinMenu();
-        Pause();
+        UnPause();
 
         StartGame();
     }
@@ -261,13 +278,15 @@ public class GameManager : MonoBehaviour
 
     public void GoToTitle()
     {
+        AudioManager.instance.StopThemeMusic();
+
         UnPause();
 
         for (int i = 0; i < players.Count; i++) { players[i].StopGame(); }
 
         gameState = GameState.MainMenu;
         cam.ClearTargets();
-        cam.MoveTo(mainMenuCameraPosition);
+        cam.MoveTo(mainMenuCameraPosition, mainMenuCameraSize);
         playButton.Select();
     }
 

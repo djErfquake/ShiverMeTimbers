@@ -29,6 +29,9 @@ public class MultipleTargetCamera : MonoBehaviour
     private Vector3 velocity;
     private Camera cam;
 
+    private float setSize = 5f;
+    private bool settingSize = false;
+
 
     private void Start()
     {
@@ -42,6 +45,14 @@ public class MultipleTargetCamera : MonoBehaviour
         Bounds bounds = CreateBounds();
         Move(bounds);
         Zoom(bounds);
+    }
+
+    private void Update()
+    {
+        if (settingSize)
+        {
+            cam.orthographicSize = setSize;
+        }
     }
 
 
@@ -88,7 +99,7 @@ public class MultipleTargetCamera : MonoBehaviour
 
 
 
-    public void MoveTo(Vector2 newPosition, System.Action onComplete = null)
+    public void MoveTo(Vector2 newPosition, float size, System.Action onComplete = null)
     {
         Vector3 camPosition = newPosition;
         camPosition.z = -10f;
@@ -96,6 +107,13 @@ public class MultipleTargetCamera : MonoBehaviour
         transform.DOMove(camPosition, 0.8f).SetEase(Ease.InCubic).OnComplete(() =>
         {
             if (onComplete != null) { onComplete(); }
+        });
+
+
+        settingSize = true;
+        DOTween.To(() => setSize, value => setSize = value, size, 0.8f).OnComplete(() =>
+        {
+            settingSize = false;
         });
     }
 
