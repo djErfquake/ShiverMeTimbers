@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Cannon : MonoBehaviour
 {
@@ -31,22 +31,28 @@ public class Cannon : MonoBehaviour
     {
         if (canFire)
         {
-            AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Cannon);
-
             StartCoroutine(JustFired());
-            //Instantiate(cannonballPrefab, cannon.transform.position, cannon.transform.rotation);
-            GameObject cannonball = Instantiate(cannonballPrefab);
-            cannonball.tag = gameObject.tag;
-            cannonball.transform.SetParent(cannonballContainer);
-            cannonball.transform.position = transform.position + (transform.right * cannonOffset);
-            cannonball.transform.rotation = transform.rotation;
 
-            Vector2 direction = (target != null) ? -(transform.position - target.transform.position).normalized : cannonball.transform.right;
-            Vector2 cannonballVelocity = direction * cannonballSpeed;
+            transform.DOScale(1.3f, 0.3f).OnComplete(() =>
+            {
+                transform.DOScale(1f, 0.15f);
+
+                AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Cannon);
+
+                //Instantiate(cannonballPrefab, cannon.transform.position, cannon.transform.rotation);
+                GameObject cannonball = Instantiate(cannonballPrefab);
+                cannonball.tag = gameObject.tag;
+                cannonball.transform.SetParent(cannonballContainer);
+                cannonball.transform.position = transform.position + (transform.right * cannonOffset);
+                cannonball.transform.rotation = transform.rotation;
+
+                Vector2 direction = (target != null) ? -(transform.position - target.transform.position).normalized : cannonball.transform.right;
+                Vector2 cannonballVelocity = direction * cannonballSpeed;
             
-            cannonball.GetComponent<Rigidbody2D>().velocity = cannonballVelocity;
-            cannonball.GetComponent<Projectile>().firingPlayer = player;
-            Destroy(cannonball, 10f);
+                cannonball.GetComponent<Rigidbody2D>().velocity = cannonballVelocity;
+                cannonball.GetComponent<Projectile>().firingPlayer = player;
+                Destroy(cannonball, 10f);
+            });
         }
     }
 
