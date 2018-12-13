@@ -51,6 +51,8 @@ public class PlayerJoinScreen : MonoBehaviour
                 addedPlayers++;
             }
         }
+
+        ShowAdvanceText(GetTotalPlayers() > 1);
     }
 
 
@@ -74,6 +76,8 @@ public class PlayerJoinScreen : MonoBehaviour
                 }
             }
         }
+
+        ShowAdvanceText(GetTotalPlayers() > 1);
     }
 
 
@@ -108,6 +112,12 @@ public class PlayerJoinScreen : MonoBehaviour
         playerJoinSections.Add(players[3], players[3].playerJoinSection);
 
         Reset();
+    }
+
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
     }
 
 

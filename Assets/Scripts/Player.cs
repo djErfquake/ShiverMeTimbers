@@ -140,6 +140,8 @@ public class Player : MonoBehaviour
             sr[i].enabled = playing;
         }
 
+        upgradeSystem.Reset();
+
         Revive();
     }
 

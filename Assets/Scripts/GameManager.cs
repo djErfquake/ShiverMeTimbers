@@ -158,6 +158,9 @@ public class GameManager : MonoBehaviour
 
         EventSystem.current.SetSelectedGameObject(null);
 
+        playersScreen.Reset();
+        playersScreen.gameObject.SetActive(true);
+
         cam.MoveTo(playerMenuCameraPosition, 540, () => { gameState = GameState.PlayerAddition; });
     }
 
@@ -193,8 +196,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        playersScreen.ShowAdvanceText(true);
-        playersScreen.Reset();
+        playersScreen.Hide();
     }
 
 
@@ -250,9 +252,10 @@ public class GameManager : MonoBehaviour
 
         winnerMenu.gameObject.SetActive(true);
         winnerMenu.localScale = Vector2.zero;
-        winnerMenu.DOScale(1, 0.8f).SetEase(Ease.OutElastic);
-
-        winAgainButton.Select();
+        winnerMenu.DOScale(1, 0.8f).SetEase(Ease.OutElastic).OnComplete(() =>
+        {
+            winAgainButton.Select();
+        });
     }
 
     private void HideWinMenu()
@@ -269,8 +272,9 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        HideWinMenu();
         UnPause();
+
+        HideWinMenu();
 
         StartGame();
     }
