@@ -102,6 +102,8 @@ public class GameManager : MonoBehaviour
             AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.Click);
             Debug.Log("removed player " + e.playerIndex.ToString());
             activeJoysticks[e.playerIndex] = false;
+
+            if (gameState == GameState.Game) { Pause(); }
         }
         else if (e.joystickAction == JoystickData.JoystickAction.Button)
         {
@@ -185,6 +187,8 @@ public class GameManager : MonoBehaviour
             bool playing = playersScreen.PlayerAdded(players[i]);
             players[i].StartGame(playing);
 
+            ScoreBanner.instance.SetPlayerActive(i, playing);
+
             if (playing)
             {
                 players[i].gameObject.SetActive(true);
@@ -197,6 +201,7 @@ public class GameManager : MonoBehaviour
         }
 
         playersScreen.Hide();
+        ScoreBanner.instance.Show();
     }
 
 

@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpgradeSystem : MonoBehaviour {
+public class UpgradeSystem : MonoBehaviour
+{
 
     public const string SHIP_ROTATION = "SHIP_ROTATION";
     public const string SHIP_SPEED = "SHIP_SPEED";
@@ -27,8 +28,7 @@ public class UpgradeSystem : MonoBehaviour {
     public Player player;
 
     [Header("Fort")]
-    public List<GameObject> fortUpgrades;
-    public List<GameObject> cannons;
+    public List<UpgradeSet> fortUpgrades;
     public GameObject banner;
     private int fortUpgradeCount = 0;
 
@@ -88,8 +88,9 @@ public class UpgradeSystem : MonoBehaviour {
 
             shipUpgradeCount++;
 
-            player.GotUpgrade();
         }
+
+        player.GotUpgrade(fortUpgradeCount);
     }
 
 
@@ -101,17 +102,12 @@ public class UpgradeSystem : MonoBehaviour {
 
         fortUpgradeCount++;
         for (int i = 0; i < fortUpgrades.Count; i++) { fortUpgrades[i].SetActive(false); }
-
         fortUpgrades[fortUpgradeCount - 1].SetActive(true);
-        if (fortUpgradeCount >= 1) { for (int i = 0; i < cannons.Count; i++) { cannons[i].SetActive(true); } }
         banner.SetActive(true);
 
-        if (fortUpgradeCount >= fortUpgrades.Count)
-        {
-            GameManager.instance.ShowWinMenu(player);
-        }
+        if (fortUpgradeCount >= fortUpgrades.Count) { GameManager.instance.ShowWinMenu(player); }
 
-        player.GotUpgrade();
+        player.GotUpgrade(fortUpgradeCount);
     }
 
 
@@ -131,7 +127,20 @@ public class UpgradeSystem : MonoBehaviour {
 
         fortUpgradeCount = 0;
         for (int i = 0; i < fortUpgrades.Count; i++) { fortUpgrades[i].SetActive(false); }
-        for (int i = 0; i < cannons.Count; i++) { cannons[i].SetActive(false); }
         banner.SetActive(false);
+    }
+}
+
+[System.Serializable]
+public class UpgradeSet
+{
+    public List<GameObject> gameObjects = new List<GameObject>();
+
+    public void SetActive(bool active)
+    {
+        for (int i = 0; i < gameObjects.Count; i++)
+        {
+            gameObjects[i].SetActive(active);
+        }
     }
 }

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     [Header("Upgrades")]
     public UpgradeSystem upgradeSystem;
     private Coroutine upgradeCoroutine;
+    private int score = 0;
 
     [Header("Join Screen")]
     public PlayerJoinSection playerJoinSection;
@@ -75,8 +76,11 @@ public class Player : MonoBehaviour
 
     
 
-    public void GotUpgrade()
+    public void GotUpgrade(int fortUpgradeCount)
     {
+        score = fortUpgradeCount;
+        ScoreBanner.instance.SetScore(PlayerJoystick.GetPlayerNumber(joystick.playerIndex) - 1, score.ToString());
+
         if (upgradeCoroutine != null) { StopCoroutine(upgradeCoroutine); upgradeCoroutine = null; }
         Invincible(false);
     }
@@ -133,6 +137,9 @@ public class Player : MonoBehaviour
 
     public void StartGame(bool playing)
     {
+        score = 0;
+        ScoreBanner.instance.SetScore(PlayerJoystick.GetPlayerNumber(joystick.playerIndex) - 1, score.ToString());
+
         ship.enabled = playing;
         SpriteRenderer[] sr = GetComponentsInChildren<SpriteRenderer>();
         for (int i = 0; i < sr.Length; i++)

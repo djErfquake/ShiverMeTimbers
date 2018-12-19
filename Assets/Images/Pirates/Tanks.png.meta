@@ -1,109 +1,91 @@
 fileFormatVersion: 2
-guid: 932a25e8b79f10f4795b67cdf0ceba20
+guid: f0300cf0ff57a254cb277b3ceb4656af
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Explosion_Large
-    21300002: Pirates_1
-    21300004: Pirates_2
-    21300006: Ship_YellowDead
-    21300008: Ghost Ship
-    21300010: Ship_BlueC
-    21300012: Pirates_6
-    21300014: Pirates_7
-    21300016: Banner-Yellow-LargeA
-    21300018: Banner-Green-LargeB
-    21300020: Pirates_10
-    21300022: Banner-Red
-    21300024: Banner-Green
-    21300026: Banner-Blue
-    21300028: Pirates_14
-    21300030: Banner-Yellow
-    21300032: Pirates_16
-    21300034: Banner-GreenB
-    21300036: Pirates_18
-    21300038: Pirates_19
-    21300040: Pirates_20
-    21300042: Pirates_21
-    21300044: Ship_RedB
-    21300046: Ship_BlueA
-    21300048: Ship_BlueDead
-    21300050: Ship_RedA
-    21300052: Ship_GreenC
-    21300054: Ship_YellowB
-    21300056: Pirates_28
-    21300058: Banner-Green-LargeDead
-    21300060: Banner_Plain
-    21300062: Pirates_31
-    21300064: Banner-RedB
-    21300066: Pirates_33
-    21300068: Banner-Blue-LargeDead
-    21300070: Explosion_Medium
-    21300072: Pirates_36
-    21300074: Pirates_37
-    21300076: Pirates_38
-    21300078: Pirates_39
-    21300080: Ship_GreenA
-    21300082: Ship_GreenDead
-    21300084: Pirates_42
-    21300086: Ship_RedC
-    21300088: Ship_BlueB
-    21300090: Banner-Green-LargeC
-    21300092: Banner-Yellow-LargeB
-    21300094: Pirates_47
-    21300096: Pirates_48
-    21300098: Pirates_49
-    21300100: Banner-Red-LargeA
-    21300102: Banner-Red-LargeC
-    21300104: Pirates_52
-    21300106: Ship_YellowA
-    21300108: Banner-Yellow-LargeDead
-    21300110: Pirates_55
-    21300112: Pirates_56
-    21300114: Pirates_57
-    21300116: Ship_RedDead
-    21300118: Ship_YellowC
-    21300120: Pirates_60
-    21300122: Ship_GreenB
-    21300124: Banner-Green-LargeA
-    21300126: Banner-Blue-LargeC
-    21300128: Pirates_64
-    21300130: Pirates_65
-    21300132: Cannon
-    21300134: Cannonball
-    21300136: Banner-Blue-LargeA
-    21300138: Pirates_69
-    21300140: Explosion_Small
-    21300142: Pirates_71
-    21300144: Pirates_72
-    21300146: Banner-YellowB
-    21300148: Pirates_74
-    21300150: Pirates_75
-    21300152: Pole
-    21300154: Pirates_77
-    21300156: Banner-Red-LargeB
-    21300158: Pirates_79
-    21300160: Pirates_80
-    21300162: Pirates_81
-    21300164: Banner-Blue-LargeB
-    21300166: Banner-Red-LargeDead
-    21300168: Pirates_84
-    21300170: Pirates_85
-    21300172: Pirates_86
-    21300174: Pirates_87
-    21300176: Pirates_88
-    21300178: Pirates_89
-    21300180: Pirates_90
-    21300182: Pirates_91
-    21300184: Pirates_92
-    21300186: Pirates_93
-    21300188: Pirates_94
-    21300190: Pirates_95
-    21300192: Pirates_96
-    21300194: Pirates_97
-    21300196: Pirates_98
-    21300198: Banner-BlueB
-    21300200: Pirates_100
-    21300202: Banner-Yellow-LargeC
+    21300000: Tanks_0
+    21300002: Tanks_1
+    21300004: Tanks_2
+    21300006: Tanks_3
+    21300008: Tanks_4
+    21300010: Tanks_5
+    21300012: Tanks_6
+    21300014: Tanks_7
+    21300016: Tanks_8
+    21300018: Tanks_9
+    21300020: Tanks_10
+    21300022: Tanks_11
+    21300024: Tanks_12
+    21300026: Tanks_13
+    21300028: Tanks_14
+    21300030: Tanks_15
+    21300032: Tanks_16
+    21300034: Tanks_17
+    21300036: Tanks_18
+    21300038: Tanks_19
+    21300040: Tanks_20
+    21300042: Tanks_21
+    21300044: Tanks_22
+    21300046: Tanks_23
+    21300048: Tanks_24
+    21300050: Tanks_25
+    21300052: Tanks_26
+    21300054: Tanks_27
+    21300056: Tanks_28
+    21300058: Tanks_29
+    21300060: Tanks_30
+    21300062: Tanks_31
+    21300064: Tanks_32
+    21300066: Tanks_33
+    21300068: Tanks_34
+    21300070: Tanks_35
+    21300072: Tanks_36
+    21300074: Tanks_37
+    21300076: Tanks_38
+    21300078: Tanks_39
+    21300080: Puff
+    21300082: Tanks_41
+    21300084: Tanks_42
+    21300086: Tanks_43
+    21300088: Tanks_44
+    21300090: Tanks_45
+    21300092: Tanks_46
+    21300094: Tanks_47
+    21300096: Tanks_48
+    21300098: Tanks_49
+    21300100: Tanks_50
+    21300102: Tanks_51
+    21300104: Tanks_52
+    21300106: Tanks_53
+    21300108: Tanks_54
+    21300110: Tanks_55
+    21300112: Tanks_56
+    21300114: Tanks_57
+    21300116: Tanks_58
+    21300118: Tanks_59
+    21300120: Tanks_60
+    21300122: Tanks_61
+    21300124: Tanks_62
+    21300126: Tanks_63
+    21300128: Tanks_64
+    21300130: Tanks_65
+    21300132: Tanks_66
+    21300134: Tanks_67
+    21300136: Tanks_68
+    21300138: Tanks_69
+    21300140: Tanks_70
+    21300142: Tanks_71
+    21300144: Tanks_72
+    21300146: Tanks_73
+    21300148: Tanks_74
+    21300150: Tanks_75
+    21300152: Tanks_76
+    21300154: Tanks_77
+    21300156: Tanks_78
+    21300158: Tanks_79
+    21300160: Tanks_80
+    21300162: Tanks_81
+    21300164: Tanks_82
+    21300166: Tanks_83
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -138,7 +120,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -147,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -204,2067 +186,1685 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Explosion_Large
+      name: Tanks_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 437
+        y: 443
+        width: 92
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b03698b8ba9884db02ac8df5e9d0b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 459
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a151f6b210434d3498ba48d8ae6ce8ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 462
+        width: 83
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde429ef1b0862e4a9a09cb62f7155a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 477
         width: 74
-        height: 75
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eedcd09cdc6bc88459b7ce3452872fb8
+      spriteID: f328f2cff61829543bbcbd7921712bde
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_1
+      name: Tanks_4
       rect:
         serializedVersion: 2
-        x: 76
-        y: 503
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 689cc6de9c888964b8f6e4c39b7ff82c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_2
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 485
-        width: 11
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da7beb5e1d8c5d64a94fd9b70ba928fc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_YellowDead
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 399
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c3cbbba483f29648a7ca82cfdccbbe3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ghost Ship
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 399
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 235d3f448048a384fa2f239c4aacca2a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_BlueC
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 399
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ac877bfa1ebe8645accc1e50ba93fb7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_6
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 399
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2955c4b0a54277944b36c903d2dbe4a2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_7
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 399
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d15dafedd7523ba4485882802798acb6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Yellow-LargeA
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 466
-        width: 66
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42ba7be7bf43a5e40801b17a7ce87116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Green-LargeB
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 465
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cf51d766ba9d2c429ea000aa18a6f42
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_10
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 404
-        width: 40
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 860cc0589ad81344087a6917e00daae1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Red
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 493
-        width: 42
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e7b3b7c394c93045bb832f2ba54a091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Green
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 483
-        width: 42
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cb3560b8661174429048832e448a85d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Blue
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 473
-        width: 42
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d2d7d3893fded0448efb3dcef3d79b0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_14
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 473
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b18602c2481230447af27f9b191104d7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Yellow
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 463
-        width: 42
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 774448c3349a1a14b8340a3589f03bc3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_16
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 449
-        width: 6
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6334472ed03a91c4783051d8866c6221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-GreenB
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 449
-        width: 6
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0bb86add46146543a8d9e360f6e8448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_18
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 417
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b05afe3f9c7c72428f6e1bf078fd0ed
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_19
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 452
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc9acfa660fe4ed4ea2268b5afd6eaad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_20
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 416
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6120d1ac8a1f78547bb87008f8ed969c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_21
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 441
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc839046597e4524c9a1b18d7049296a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_RedB
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 322
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc4dc7bdb1bfb65438709ef45530ef48
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_BlueA
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 322
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12d4b6cc74e7b4e44bd4ce7ca9eb599e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_BlueDead
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 284
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 243aa31307dc23a45b2c9e547539a720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_RedA
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 284
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fcb95c4b3d0cc240a27e6e8b8bae28f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_GreenC
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 284
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87c24133a3e2a4d4d82d47fa4aaee31b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_YellowB
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 284
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6c88fece886c9b4786483df7360706c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_28
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 284
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72846b916085ca34a957c43036d31b2f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Green-LargeDead
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 368
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96a5b70f23992d744a539b87c10d7d0b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner_Plain
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 369
-        width: 66
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 604a5116b4034c346b157b501a18c3eb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_31
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 376
-        width: 16
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 224e1230256c11e43aa8abb3add3ca95
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-RedB
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 380
-        width: 6
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43cab90d1f04603439ab5a5a0d3c39dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_33
-      rect:
-        serializedVersion: 2
-        x: 648
-        y: 294
-        width: 40
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f99f9b780b0f7f46bb39885578946ba
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Blue-LargeDead
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 319
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0459489e40fd03946bd7979940a32d9b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Explosion_Medium
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 308
-        width: 60
+        x: 348
+        y: 453
+        width: 75
         height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 092992e862cab5643bbbb3d27194c8d5
+      spriteID: ea3a43f97bce3f04b9a193e1aee01eef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_36
+      name: Tanks_5
       rect:
         serializedVersion: 2
-        x: 606
-        y: 329
-        width: 20
-        height: 38
+        x: 425
+        y: 452
+        width: 59
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7b6112ba800fff40be258fef5152211
+      spriteID: 76252858b29a66c47ab46ef1478349c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_37
+      name: Tanks_6
       rect:
         serializedVersion: 2
-        x: 628
-        y: 348
-        width: 16
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29abdf0315db1b8428606f7b0b36ea17
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_38
-      rect:
-        serializedVersion: 2
-        x: 628
-        y: 320
-        width: 16
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96323de5e0c36654c9332e923fdbd1e5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_39
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 207
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53160d612c5786e43b89fafffac43539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_GreenA
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 207
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c25a97ab553e9144bd6316ce37cd1dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_GreenDead
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 169
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62290a20270d7c64da7a891fa1580bf4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_42
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 169
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1df32d099f92af24b8e951e981e6d804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_RedC
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 169
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a42b0a9ff2ac71140b641a3cd1c21613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_BlueB
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 169
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d1f0c1f28e85a142ae365c86b8aa68f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Green-LargeC
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 235
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eb9932dcf1fb254c9f30901743c5567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Yellow-LargeB
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 270
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2deda68ae5bc9d240ab1f2a6d840d811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_47
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 198
-        width: 50
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71d07196e34e9d5458965791494340f5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_48
-      rect:
-        serializedVersion: 2
-        x: 596
-        y: 198
-        width: 50
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f63531fa6c26b814d9500a89773aaa4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_49
-      rect:
-        serializedVersion: 2
-        x: 648
-        y: 184
-        width: 40
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 137dde75c002aff439318f2368777ef2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Red-LargeA
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 138
-        width: 66
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7dbc409cc68d81469ff1af77cbba36e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Red-LargeC
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 222
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0782c5b5ad33f6419bd1f59014aa455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_52
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 92
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f57b11f32d30a484bb77cba5b157faef
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_YellowA
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 92
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43ddc6d879e20844b86ea91efb569ebc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Yellow-LargeDead
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 172
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c53684e5806751f448c658c5a59a25e2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_55
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 88
-        width: 50
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1ddcabf0f863414c9e026a7c07ac575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_56
-      rect:
-        serializedVersion: 2
-        x: 596
-        y: 88
-        width: 50
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f22e7716719fee48a97cfc9859dc25d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_57
-      rect:
-        serializedVersion: 2
-        x: 648
-        y: 74
-        width: 40
-        height: 108
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7dc5f79165a5f44eaec93d953af2593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_RedDead
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 54
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d61b391ecb027740948baf29bdf2bf5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_YellowC
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 54
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a4d116f2382f840bc0345e86ed4f12
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_60
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 54
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13c6e300c60606a47ad93ffd73b62ae5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ship_GreenB
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 54
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d4ff3f0f263f8b4b9693fc6be030edd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Green-LargeA
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 90
-        width: 66
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64701e7093e6a4549ba4df9bb6678bd8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Blue-LargeC
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 123
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5592a8f018521c24abfb825f666d112a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_64
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 81
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44df816b59eb70741be35a5989471d18
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_65
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 81
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a7cb9bba9b5e5b4ab6f62f94ef01c89
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cannon
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 74
-        width: 29
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a908585dbedb4d4f9b2a450474882a3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cannonball
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 79
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8b896b3ea8f0e9409f7015cc757d339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Blue-LargeA
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 42
-        width: 66
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9354622b85a469e4f889b8bf16080740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_69
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 74
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e012f884156db1741afb27280f350006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Explosion_Small
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 45
-        width: 42
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9776c12092aa98b40955ef2e5329a9d2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_71
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 48
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8619e2072c48390429e4ff40259e1970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_72
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 48
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16bf5ee8abab2934f9283afcda726c21
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-YellowB
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 64
-        width: 6
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62ae7bd2da04fac48a7738edb051bcb6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_74
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 70
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 049d8b77c743e9440b999e584968bd02
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_75
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 70
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ef02aaeb213a4f4aa7657707b8e8ef0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pole
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 65
-        width: 26
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bd4462b43a9a9546bc09d778deafce8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_77
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 62
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e761198370324f4479b0ee4f7ef5d6c2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Red-LargeB
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 25
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74592d064dc31cd47b5d15bea352afa9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_79
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 59
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf52fe48f081c141b45f6eb84d72621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_80
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 59
-        width: 42
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac9d593b702bbf2469d52768cf41b698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_81
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 56
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd70bc3ebcdd6444fbdb0cb0a0abe2e9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Blue-LargeB
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0aaf81f57961f44189f2da5de423956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banner-Red-LargeDead
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: baccb8f2a9c71b449957a76cd6b07d66
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_84
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed8a78fae43d7304bad89bb0415b9bd5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_85
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fa4d5fe972561c469bf8edb98932ef0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_86
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c478d44c5a04af64fa5ddae147857bec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_87
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 5
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d349a3c4cc38e345928f9ea43e4f9ae
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_88
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 30
-        width: 26
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbdba02dd5c27b04d816db1b51ce9a19
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_89
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 18
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b08638f8d6cfa84da8639c30669dd96
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_90
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 21
-        width: 22
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecad3ce444fe85d468df64ba3388cec1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_91
-      rect:
-        serializedVersion: 2
-        x: 568
-        y: 21
-        width: 22
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 025030c6a05e5d044b2f7ba7b63e5b04
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_92
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 28
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8b4fb2a24f55d44e83dc5de59937404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pirates_93
-      rect:
-        serializedVersion: 2
-        x: 614
-        y: 7
-        width: 18
+        x: 486
+        y: 473
+        width: 55
         height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797f5a847c84e4e4e8e1cdbb24e35e9a
+      spriteID: 1f7d79e682144384fba070f5e875e7d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_94
+      name: Tanks_7
       rect:
         serializedVersion: 2
-        x: 408
-        y: 3
-        width: 29
-        height: 20
+        x: 543
+        y: 484
+        width: 26
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dc15c6cd371400418a4dd3f7549bd1e
+      spriteID: 6767fdee994ccaa44b3e9d8de3512ed7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_95
+      name: Tanks_8
       rect:
         serializedVersion: 2
-        x: 439
-        y: 4
-        width: 20
-        height: 12
+        x: 180
+        y: 413
+        width: 82
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab9797c17417f642826737ad39daecf
+      spriteID: 7a2d4d8bb93656a4f95c078ae14df1db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_96
+      name: Tanks_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 401
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc41526452bdbfd47b18a1c7f37bbb12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 457
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab782d93f7f7884c9048c2bfab126ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 430
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6c773199e766b4b95f5b0d677e1a6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 92
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0755fad995e47b840a06d2352c0da3a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 404
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4957813130759408438acca68d670d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 392
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759306871d4782f4f90f6f18c72ae984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_15
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 411
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84947e804480ed5408f338c1081e846f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_16
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 411
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9106d32f7d3571b4ca89d7ba4ee8501d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_17
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 395
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffea7d982bac224a8d99632e6c49874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 349
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681827e5a81442f4e99533fe43eef6d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 344
+        width: 82
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4beded036244d479edd4690ef42092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 332
+        width: 82
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a2b0aeb4ffda7438d284a126b5af33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 395
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347cf135f498b504a8a3c6f42be84d63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_22
       rect:
         serializedVersion: 2
         x: 463
-        y: 3
-        width: 22
-        height: 20
+        y: 393
+        width: 25
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 695cfe0e05ba22040b86989beeda63eb
+      spriteID: 26ff503520a3c8144a168fff8d7284eb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_97
+      name: Tanks_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 359
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498943327c87e574f8b80fe5027d86db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 92
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba9f4607e3375f48ab134dd483506f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_25
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 355
+        width: 74
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf12a061ca47b7f47b2e2d88c3ca72f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_26
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 326
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d90a27165ff23a46a4b4aa073bff3c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_27
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 364
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1000b58dc783c4bab874795a53f460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_28
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 294
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105241c5a407d8b468a6646aa8449cbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_29
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 294
+        width: 82
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7d3b5a67c0f0478c7e88ec6dd5878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_30
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 300
+        width: 74
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbfa72a9a774f944a409bf3debe4379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_31
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 331
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4b92e835e195545a6002374be6bd58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_32
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 307
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b932c0526b07f8544a7d8252f0dd2605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 92
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1bf30a071c68c4c92e294a81f12e6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_34
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 232
+        width: 83
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b325752b81ec3c42848b2e3dc7f4bda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_35
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 174
+        width: 84
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dfcf2020211fe4d96fa0aae7940d59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 270
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf4469479bd9543b54411860fdd5fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_37
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 245
+        width: 74
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5f0a4dd37aef54cbb981c68c3a85fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_38
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 264
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e687e1c8c3f47469e6f35347ff1373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_39
       rect:
         serializedVersion: 2
         x: 487
-        y: 3
-        width: 22
+        y: 274
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c00a4654cbb6844bace0d7a19a3aef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puff
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 264
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553d87c479f909a4a8c927c18f6fb54f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_41
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 208
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cabd7c174d602041a8bceb07556a237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_42
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 202
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a140dfe70ff2a4b80eda4298eb7fc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_43
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 223
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3e864ca6d4a9a42b0ebea156e05952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_44
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 246
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6e611fb573bbd469e337b8c35e47d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_45
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 190
+        width: 74
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a5e064b3341bc4dbc1d9bf380c7608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_46
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 230
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ae3c8fb2b296d418e9660c6183bed7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 91
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383d3ee92cae6a746abb7c00caf92d8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_48
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 160
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defa04b874be68d4dac321155688dabe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_49
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 171
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f9c60a0758a2d4f9db63b3598b9968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_50
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 214
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e243f576510583747a7c73c9cd5ae2fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_51
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 139
+        width: 82
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e4f4306ba107040a4a93088e0e2d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_52
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 190
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18b30ba19b05ea46a0b10146547b72e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 91
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a17a32dd6ce7274aa0cf97796ead247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_54
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 112
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04ffe12c07c28548b828914894d1140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_55
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 170
+        width: 67
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28b1f5a329517e43bfa387914b6f203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_56
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 135
+        width: 74
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05c665a67d6c914797e4acb88f91393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_57
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 90
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba776ec3e65df5344873186288487857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_58
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 153
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4431cc0b119eae4ca588cc42969b1d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_59
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 154
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1a3fa2fa213704399fc00dcdaa27b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_60
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 119
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563dce3751049804ca98acfead5acb47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_61
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 139
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ceca78415833249940df9a17671ef5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 90
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060d78cdc7f2d38459d1f91a7ed407a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_63
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 119
+        width: 67
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244eeecac0089ac46963ccfa4056a882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_64
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 78
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fc9664d3be87944b45ed6cf3f1ef1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_65
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 59
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa66cc3567b3a747b92a16336f741d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 90
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0813f4f2d4812b943bcedaccb9c9a820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_67
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 90
+        width: 78
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2308e6bf532aa4589ef2f34dd92e54
+      spriteID: cddd4c2e63dd15c4c9e021a655565618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_98
+      name: Tanks_68
       rect:
         serializedVersion: 2
-        x: 511
-        y: 3
-        width: 22
-        height: 20
+        x: 261
+        y: 62
+        width: 82
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67075bd17f2f2e54d8c79338ac67414a
+      spriteID: 14c1a6bbd49d3344c8430daf7740ec87
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-BlueB
+      name: Tanks_69
       rect:
         serializedVersion: 2
-        x: 592
+        x: 498
+        y: 67
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14b0f041bddf8d4c823d571b0e6d816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_70
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 67
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476770dd68933b8408fa79501be8d26b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_71
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 74
+        width: 62
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfd0a9729920b74f8fed5e7fbd3f854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_72
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 74
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62399515c699474c83bbc2cfeee0de7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_73
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f11ce0fb311342a44d501828e9790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_74
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 17
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acf13de1b0d9584eb94b67bf4d26edc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_75
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 4
-        width: 6
-        height: 22
+        width: 86
+        height: 68
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1256c273de2c68049ba819a3cbf8c27c
+      spriteID: 565ff8d638ef63941bb4d4d16299b4c7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pirates_100
+      name: Tanks_76
       rect:
         serializedVersion: 2
-        x: 600
+        x: 88
         y: 4
-        width: 6
-        height: 22
+        width: 86
+        height: 68
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd630ab48a8a9a84e9ec10750c55a151
+      spriteID: ae4106481ad2c4f47ba2ff1590d56146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banner-Yellow-LargeC
+      name: Tanks_77
       rect:
         serializedVersion: 2
-        x: 408
-        y: 186
-        width: 66
-        height: 47
+        x: 261
+        y: 12
+        width: 82
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56cd49b4604d7e2488f2bb2cb368dabe
+      spriteID: 1ab743877f919e24fac3a137ae0b1f37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_78
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 9
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31755db1b86359547a8334954492067a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_79
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 24
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dca163a6ece7143b6102c00d86fa34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_80
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 39
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c5e09eb92d9154b95eef72928e1f56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_81
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0707c0490312f8e4bb57bde1230dda2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_82
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 6
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef94c5d205be9f459dc28d5992e0f7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tanks_83
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 4
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ad67abb03c0584abef2bd5bb4625ed
       vertices: []
       indices: 
       edges: []
@@ -2272,7 +1872,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 18a9d050165c18f42b64becee89e437d
+    spriteID: f9f007ee314cefd409f7d6d67d967699
     vertices: []
     indices: 
     edges: []
