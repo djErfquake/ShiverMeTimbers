@@ -31,6 +31,7 @@ public class UpgradeSystem : MonoBehaviour
     public List<UpgradeSet> fortUpgrades;
     public GameObject banner;
     private int fortUpgradeCount = 0;
+    public ParticleSystem buildPuff;
 
 
     private bool upgradeActive = false;
@@ -97,6 +98,8 @@ public class UpgradeSystem : MonoBehaviour
     public void UpgradeFort()
     {
         AudioManager.instance.PlaySoundEffect(AudioManager.SoundType.FortUpgrade);
+
+        buildPuff.Play();
 
         HideUpgradeOptions();
 
